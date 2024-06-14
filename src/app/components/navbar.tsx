@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className="py-4 px-4 md:px-8 lg:px-12">
-      <div className="md:hidden flex justify-end items-center self-end mx-4 my-2">
+      <div className="lg:hidden flex justify-end items-center self-end mx-4 my-2">
         <div onClick={toggleMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ export default function Navbar() {
           </svg>
         </div>
       </div>
-      <ul className="hidden md:flex justify-end space-x-6 text-xl font-medium text-white">
+      <ul className="hidden lg:flex justify-end space-x-6 text-xl font-light text-white">
         <li>
           <Link
             href="/"

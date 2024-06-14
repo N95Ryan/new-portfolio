@@ -37,7 +37,7 @@ export default function LetterPullUp({
           animate="animate"
           custom={i}
           className={cn(
-            "font-display text-center text-l tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-4xl md:leading-[5rem]",
+            "font-display text-center text-l tracking-[-0.02em] text-black drop-shadow-sm dark:text-white text-3xl md:leading-[5rem]",
             className,
           )}
         >
