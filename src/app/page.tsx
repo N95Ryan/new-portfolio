@@ -3,15 +3,17 @@ import BackgroundAnimation from "./components/backgroundAnimation/backgroundAnim
 import Navbar from "./components/navbar";
 import About from "./components/about/about";
 import Skills from "./components/skills/skills";
+import Footer from "./components/footer";
 
 export default function Page() {
   return (
-    <div id="home" className="relative h-screen w-screen">
-      <Navbar />
-      <BackgroundAnimation/>
+      <div id="home" className="relative h-screen w-screen">
+        <Navbar />
+        <BackgroundAnimation />
         <Title />
-        <About/>
-        <Skills/>
-    </div>
-  );
+        <About />
+        <Skills />
+        <Footer />
+      </div>
+  )
 }
