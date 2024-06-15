@@ -6,7 +6,7 @@ import Skills from "./components/skills/skills";
 
 export default function Page() {
   return (
-    <div className="relative h-screen w-screen">
+    <div id="home" className="relative h-screen w-screen">
       <Navbar />
       <BackgroundAnimation/>
         <Title />

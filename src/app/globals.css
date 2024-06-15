@@ -19,8 +19,18 @@
 body {
   background: rgb(30,27,75);
   background: linear-gradient(150deg, #181818 0%, #101010 100%);
-  overflow-x: hidden;
-    
+  overflow-x: hidden;   
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
