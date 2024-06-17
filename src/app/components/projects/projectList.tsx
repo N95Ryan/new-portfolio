@@ -3,7 +3,7 @@ import ProjectCard from './projectCard';
 export const projects = [
     {
         "title": "Konbini",
-        "stack": "React / Next / Tailwind / GraphQL",
+        "stack": "React • Next • Tailwind • GraphQL",
         "description": "J'ai été en charge de la refonte graphique de la page d'accueil du site.\nJ'ai également participé à l'intégration de nouvelles features ainsi qu'à l'optimisation du SEO et de l'experience utilisateur.",
         "image": "/images/Projets/Konbini.png",
         "link": "https://www.konbini.com/",
@@ -18,12 +18,12 @@ export const projects = [
         "image": "/images/Projets/Calculatrice.png",
         "link": "https://calculatrice-react.vercel.app/",
         "bgcolor": "#61DAFB",
-        "textColor": "#ffffff",
+        "textColor": "#000000",
         "id": "2"
     },
     {
         "title": "Bitjutsu",
-        "stack": "React / Next / Tailwind / Replicate",
+        "stack": "React • Next • Tailwind",
         "description": "J'ai réalisé ce projet dans le but de m'exercer à l'intégration de tokens dans un projet. Il consiste en une application interactive qui permet d'éditer une image via des lignes de texte. Pour cela j'ai fait appel à l'API de Replicate.",
         "image": "/images/Projets/Bitjutsu.png",
         "link": "https://bijutsu-n95ryan.vercel.app/",
@@ -37,13 +37,13 @@ export const projects = [
         "description": "Cette maquette d'application a été réalisée en collaboration avec des camarades de promotion dans le cadre de notre soutenance de fin de première année. L'application permet via une carte intégrée de consulter une liste d'événements liés à l'écologie.",
         "image": "/images/Projets/Ecomap.png",
         "link": "https://www.figma.com/proto/SELGWIlBrSMJ0Bqe02toWk/Eco---Map?node-id=281-4983&starting-point-node-id=250%3A3263",
-        "bgcolor": "#c04cfd",
+        "bgcolor": "#047857",
         "textColor": "#ffffff",
         "id": "4"
     },
     {
         "title": "DisGOvary",
-        "stack": "React / Next / Tailwind / GO",
+        "stack": "React • Next • Tailwind • GO",
         "description": "DisGOvary est un projet fullstack mis en place afin qu'un développeur novice puisse s’intéresser davantage aux divers fonctionnement du front et du back. L’intérêt de l’application est de gérer une base de données depuis le navigateur.",
         "image": "/images/Projets/Disgovary.png",
         "link": "https://disgovary.vercel.app/",
@@ -58,7 +58,7 @@ export const projects = [
         "image": "/images/Projets/TicTacToe.png",
         "link": "https://tic-tac-toe-coral-two-35.vercel.app/",
         "bgcolor": "#fb923c",
-        "textColor": "#ffffff",
+        "textColor": "#000000",
         "id": "6"
     }
 ];
