@@ -5,8 +5,14 @@ import skillsDetails from "./skillDetails";
 export default function Skills() {
   const { techSkills, frontSkills, backSkills, mobileSkills, designSkills } = skillsDetails();
 
-  const renderSkillCards = (skills) => {
-    return skills.map((skill) => (
+  type Skill = {
+    title: string;
+    icon: any;
+    color: string;
+  };
+
+  const renderSkillCards = (skills: Skill[]) => {
+    return skills.map((skill: Skill) => (
       <SkillCard
         key={skill.title}
         title={skill.title}
