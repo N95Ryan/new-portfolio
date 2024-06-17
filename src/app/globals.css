@@ -17,9 +17,13 @@
 }
 
 body {
-  background: rgb(30,27,75);
-  background: linear-gradient(150deg, #181818 0%, #101010 100%);
+  background: #101010;
   overflow-x: hidden;   
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
 }
 
 .section {

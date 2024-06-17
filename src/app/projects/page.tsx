@@ -1,16 +1,22 @@
-import Navbar from "../components/navbar";
-import BackgroundAnimation from "@/app/components/backgroundAnimation/backgroundAnimation";
-export default function Contact() {
+import Navbar from "../components/navbar"
+import BackgroundAnimation from "../components/backgroundAnimation/backgroundAnimation"
+import Footer from "../components/footer"
+import ProjectCard from "../components/projects/projectCard";
+import { projects } from "../components/projects/projectList";
+
+export default function Page() {
   return (
-    <div className="relative h-screen w-screen">
-      <Navbar />
-      <BackgroundAnimation />
-      <div className="flex flex-col items-center justify-center h-screen">
-        <h1 className="text-4xl font-semibold text-white">My projects</h1>
-        <p className="text-xl font-light text-white">
-          This is the projects page.
-        </p>
+      <div id="projects" className="relative h-screen w-screen">
+        <Navbar />
+        <BackgroundAnimation />
+        <div className="animate-fade-down animate-once animate-duration-[1300ms]">
+        <h3 className="text-5xl font-semibold text-indigo-500 text-center">
+          Mes Réalisations
+        </h3>
+        <hr className="my-8 border-t border-indigo-700 w-1/2 mx-auto" />
       </div>
-    </div>
-  );
+      <ProjectCard project={projects[0]}/>
+      <Footer />
+      </div>
+  )
 }

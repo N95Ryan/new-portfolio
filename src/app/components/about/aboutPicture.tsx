@@ -8,9 +8,10 @@ export default function AboutPicture() {
         <div className="relative z-10">
           <Image
             src="/images/photo.png"
+            width={500}
+            height={500}
             alt="Ryan"
-            width={300}
-            height={300}
+            quality={100}
             className="object-cover rounded-md sm:w-96 sm:h-96 md:w-400 md:h-400"
           />
         </div>

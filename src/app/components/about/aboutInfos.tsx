@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function AboutInfos() {
   return (
-    <div className="flex flex-col items-center justify-center w-full sm:w-1/2 p-6 animate-fade-left animate-once animate-duration-[1300ms]">
+    <div className="flex flex-col items-center justify-center md:w-1/2 mx-6 animate-fade-left animate-once animate-duration-[1300ms]">
       <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">Je me présente :</h2>
       <div className="text-white text-base sm:text-lg mb-8 w-full sm:w-auto">
         <ul>
