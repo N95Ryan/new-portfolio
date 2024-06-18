@@ -7,7 +7,7 @@ export default function AboutPicture() {
         <div className="absolute inset-8 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 transform -translate-x-6 -translate-y-6 -skew-y-6"></div>
         <div className="relative z-10">
           <Image
-            src="/images/photo.png"
+            src="/images/photo.jpg"
             width={500}
             height={500}
             alt="Ryan"

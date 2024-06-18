@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar";
 import BackgroundAnimation from "../components/backgroundAnimation/backgroundAnimation";
+import { ContactForm } from "../components/contactForm";
 import Footer from "../components/footer";
-import ContactForm from "../components/form";
 
 export default function Page() {
   return (
@@ -13,8 +13,8 @@ export default function Page() {
           Me contacter
         </h3>
         <hr className="my-8 border-t border-indigo-700 w-1/2 mx-auto" />
+        <ContactForm />
       </div>
-      {/* <ContactForm /> */}
       <Footer />
     </div>
   );

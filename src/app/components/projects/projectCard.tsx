@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-1 bg-[#343a40] hover:bg-[#212529] transition text-white self-end text-xs md:text-sm font-semibold rounded-xl"
+                        className="px-4 py-1 bg-[#343a40] hover:bg-[#212529] transition text-white self-end text-xs md:text-sm font-semibold rounded-lg"
                     >
                         Lien
                     </a>
