@@ -5,8 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ryan PINA-SILASSE | Développeur Web Front-end",
-  description: "Portfolio de Ryan PINA-SILASSE",
+  title: "Ryan PINA-SILASSE | Portfolio",
+  description: "Portfolio de Ryan PINA-SILASSE, développeur web front-end spécialisé en React. Découvrez mes projets, mes compétences et mon parcours.",
+  keywords: "Ryan PINA-SILASSE, Développeur Web, Front-end, React, Next.js, Portfolio, Hetic, Konbini, Canada",
+  authors: [{ name: "Ryan PINA-SILASSE" }],
+  
 };
 
 export default function RootLayout({
