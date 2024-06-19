@@ -6,7 +6,7 @@ import SocialMedia from "../socialMedia";
 export default function About() {
   return (
     <>
-    <div id="about" className="mt-[5rem]">
+    <div id="about" className="flex flex-col min-h-screen">
     <div className="animate-fade-down animate-once animate-duration-[1300ms]">
         <h3 className="text-5xl font-semibold text-indigo-500 text-center">
           Qui suis-je ?

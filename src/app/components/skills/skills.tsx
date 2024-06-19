@@ -24,7 +24,7 @@ export default function Skills() {
 
   return (
     <>
-      <div id="skills" className="animate-fade-down animate-once animate-duration-[1300ms] mt-[10rem]">
+      <div id="skills" className="animate-fade-down animate-once animate-duration-[1300ms] mt-[5rem]">
         <h3 className="text-5xl font-semibold text-indigo-500 text-center mt-[3rem]">
           Mes skills
         </h3>

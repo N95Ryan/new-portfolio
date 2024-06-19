@@ -4,7 +4,7 @@ export const projects = [
     {
         "title": "Konbini",
         "stack": "Next • Tailwind • GraphQL",
-        "description": "J'ai été en charge de la refonte graphique de la page d'accueil du site.\nJ'ai également participé à l'intégration de nouvelles features ainsi qu'à l'optimisation du SEO et de l'experience utilisateur.",
+        "description": "J'ai été en charge de la refonte graphique de la page d'accueil du site.\nJ'ai également participé à l'intégration de nouvelles features ainsi qu'à l'optimisation du SEO et de l'UX.",
         "image": "/images/Projets/Konbini.jpg",
         "link": "https://www.konbini.com/",
         "bgcolor": "#b91c1c",
@@ -24,7 +24,7 @@ export const projects = [
     {
         "title": "Bitjutsu",
         "stack": "Next • Tailwind • Replicate",
-        "description": "J'ai réalisé ce projet dans le but de m'exercer à l'intégration de tokens dans un projet. Il consiste en une application interactive qui permet d'éditer une image via des lignes de texte. Pour cela j'ai fait appel à l'API de Replicate.",
+        "description": "Ce projet a été établi dans le but de m'exercer à l'intégration de tokens dans un projet. Il s'agit d'une application qui permet d'éditer une image via des promts de texte. Pour cela j'ai utilisé l'API de Replicate.",
         "image": "/images/Projets/Bitjutsu.jpg",
         "link": "https://bijutsu-n95ryan.vercel.app/",
         "bgcolor": "#fff",
@@ -34,7 +34,7 @@ export const projects = [
     {
         "title": "EcoMap",
         "stack": "Figma",
-        "description": "Cette maquette d'application a été réalisée en collaboration avec des camarades de promotion dans le cadre de notre soutenance de fin de première année. L'application permet via une carte intégrée de consulter une liste d'événements liés à l'écologie.",
+        "description": "Cette maquette d'application a été réalisée dans le cadre de ma soutenance de fin d'année. L'application permet via une carte de consulter une liste d'événements liés à l'écologie.",
         "image": "/images/Projets/Ecomap.jpg",
         "link": "https://www.figma.com/proto/SELGWIlBrSMJ0Bqe02toWk/Eco---Map?node-id=281-4983&starting-point-node-id=250%3A3263",
         "bgcolor": "#047857",
@@ -44,7 +44,7 @@ export const projects = [
     {
         "title": "DisGOvary",
         "stack": "React • Tailwind • GO",
-        "description": "DisGOvary est un projet fullstack mis en place afin qu'un développeur novice puisse s’intéresser davantage aux divers fonctionnement du front et du back. L’intérêt de l’application est de gérer une base de données depuis le navigateur.",
+        "description": "DisGOvary est un projet fullstack crée afin de mieux illusttrer les divers fonctionnement front et back. L’application permet de gérer une base de données depuis le navigateur.",
         "image": "/images/Projets/Disgovary.jpg",
         "link": "https://disgovary.vercel.app/",
         "bgcolor": "#26a6bd",
@@ -54,7 +54,7 @@ export const projects = [
     {
         "title": "Tic-Tac-Toe",
         "stack": "Javascript",
-        "description": "Ce projet est une application web développée pour illustrer les fondamentaux de la programmation en JavaScript et la manipulation du DOM. L’intérêt de l’application est de permettre aux utilisateurs de jouer au Tic-Tac-Toe directement dans leur navigateur.", 
+        "description": "Cette application web a été développée pour illustrer les bases de JavaScript et la manipulation du DOM. Elle permet aux utilisateurs de jouer au Tic-Tac-Toe directement dans leur navigateur.", 
         "image": "/images/Projets/TicTacToe.jpg",
         "link": "https://tic-tac-toe-coral-two-35.vercel.app/",
         "bgcolor": "#fb923c",

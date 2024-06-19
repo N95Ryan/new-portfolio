@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     className="transition duration-500 ease-in-out transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 rounded-t-xl bg-black bg-opacity-90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <p className="text-white text-center mx-4 text-xs md:text-sm">{project.description}</p>
+                    <p className="text-white text-center mx-4 text-xs lg:text-sm">{project.description}</p>
                 </div>
             </div>
             <div
