@@ -3,7 +3,7 @@ import SkillCard from "./SkillCard";
 import skillsDetails from "./skillDetails";
 
 export default function Skills() {
-  const { techSkills, frontSkills, backSkills, mobileSkills, designSkills } = skillsDetails();
+  const { techSkills, frontSkills, backSkills, designSkills } = skillsDetails();
 
   type Skill = {
     title: string;
@@ -51,14 +51,7 @@ export default function Skills() {
           {renderSkillCards(backSkills)}
         </div>
       </div>
-
-      <div className="my-6 animate-jump-in">
-        <p className="text-white text-3xl text-center my-4">Mobile</p>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mx-8 lg:mx-[20rem] gap-6">
-          {renderSkillCards(mobileSkills)}
-        </div>
-      </div>
-
+      
       <div className="my-6 animate-jump-in">
         <p className="text-white text-3xl text-center my-4">Conception graphique</p>
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mx-8 lg:mx-[20rem] gap-6">

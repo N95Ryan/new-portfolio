@@ -1,5 +1,6 @@
-import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiBootstrap, SiGraphql, SiMysql, SiNodedotjs, SiAdobephotoshop, SiAdobeillustrator, SiFigma, SiCanva, SiExpo } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiSass, SiReact, SiNextdotjs, SiTailwindcss, SiGraphql, SiMysql, SiNodedotjs, SiAdobephotoshop, SiAdobeillustrator, SiFigma } from "react-icons/si";
 import { BiLogoGoLang } from "react-icons/bi";
+
 
 function skillsDetails() {
   const techSkills = [
@@ -14,6 +15,11 @@ function skillsDetails() {
       color: "#007acc",
     },
     {
+      title: "Sass",
+      icon: <SiSass />,
+      color: "#cc6699",
+    },
+    {
       title: "Go",
       icon: <BiLogoGoLang />,
       color: "#00ADD8",
@@ -22,7 +28,7 @@ function skillsDetails() {
 
   const frontSkills = [
     {
-      title: "React.js",
+      title: "React",
       icon: <SiReact />,
       color: "#61DAFB",
     },
@@ -36,19 +42,9 @@ function skillsDetails() {
       icon: <SiTailwindcss />,
       color: "#06B6D4",
     },
-    {
-      title: "Bootstrap",
-      icon: <SiBootstrap />,
-      color: "#7952B3",
-    },
-  ];
+    ];
 
   const backSkills = [
-    {
-      title: "GraphQL",
-      icon: <SiGraphql />,
-      color: "#E10098",
-    },
     {
       title: "Node.js",
       icon: <SiNodedotjs />,
@@ -59,18 +55,10 @@ function skillsDetails() {
       icon: <SiMysql />,
       color: "#4479A1",
     },
-  ];
-
-  const mobileSkills = [
     {
-      title: "React Native",
-      icon: <SiReact />,
-      color: "#61DAFB",
-    },
-    {
-      title: "Expo",
-      icon: <SiExpo />,
-      color: "#ffffff",
+      title: "GraphQL",
+      icon: <SiGraphql />,
+      color: "#E10098",
     },
   ];
 
@@ -90,14 +78,9 @@ function skillsDetails() {
       icon: <SiFigma />,
       color: "#F24E1E",
     },
-    {
-      title: "Canva",
-      icon: <SiCanva />,
-      color: "#00C4CC",
-    },
   ];
 
-  return { techSkills, frontSkills, backSkills, mobileSkills, designSkills };
+  return { techSkills, frontSkills, backSkills, designSkills };
 }
 
 export default skillsDetails;
