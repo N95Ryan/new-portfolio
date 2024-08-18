@@ -1,4 +1,4 @@
-import { SiJavascript, SiTypescript, SiSass, SiReact, SiNextdotjs, SiTailwindcss, SiGraphql, SiMysql, SiNodedotjs, SiAdobephotoshop, SiAdobeillustrator, SiFigma } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiSass, SiReact, SiNextdotjs, SiTailwindcss, SiGraphql, SiMysql, SiExpress, SiAdobephotoshop, SiAdobeillustrator, SiFigma } from "react-icons/si";
 import { BiLogoGoLang } from "react-icons/bi";
 
 
@@ -14,11 +14,7 @@ function skillsDetails() {
       icon: <SiTypescript />,
       color: "#007acc",
     },
-    {
-      title: "Sass",
-      icon: <SiSass />,
-      color: "#cc6699",
-    },
+   
     {
       title: "Go",
       icon: <BiLogoGoLang />,
@@ -42,14 +38,20 @@ function skillsDetails() {
       icon: <SiTailwindcss />,
       color: "#06B6D4",
     },
+    {
+      title: "Sass",
+      icon: <SiSass />,
+      color: "#cc6699",
+    },
     ];
 
   const backSkills = [
     {
-      title: "Node.js",
-      icon: <SiNodedotjs />,
-      color: "#339933",
+      title: "Express.js",
+      icon: <SiExpress />,
+      color: "#fff",
     },
+  
     {
       title: "MySQL",
       icon: <SiMysql />,
