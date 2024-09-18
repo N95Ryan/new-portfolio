@@ -22,15 +22,19 @@ export default function AboutInfos() {
         </ul>
       </div>
       <p className="text-white text-base sm:text-lg mb-4 w-full sm:w-auto">
-        Fasciné par les avancées technologiques, mon esprit curieux me pousse à
-        toujours explorer de nouvelles perspectives dans ce domaine. <br/> <br/>
-        Grâce à ma volonté de découvrir, j'ai pu développer mes compétences dans le domaine
-        du web et du numérique de manière plus étendue. <br/> <br/>
-        Ma capacité à m'adapter et mon désir constant d'apprendre m'ont permis de concevoir et de
-        participer à différents projets variés et stimulants. <br/> <br/>
-        Grâce à cette combinaison de compétences, je suis en mesure de proposer des solutions
-        novatrices dans différentes collaborations, ce qui fait de moi un allié
-        privilégié.{" "}
+        Fasciné par les innovations technologiques, mon esprit curieux me pousse
+        à toujours explorer de nouvelles choses. <br /> <br />
+        Au cours de ma carrière, j'ai pu développé un large éventail de
+        compétences, tant techniques qu'humaines, qui me permettent de m'adapter
+        rapidement et de concevoir des solutions digitales innovantes,
+        performantes et centrées sur l'utilisateur. <br />
+        <br />
+        Fort de mes expériences sur des projets variés et stimulants, je reste
+        animé par un désir constant d'apprentissage et d'innovation. <br />{" "}
+        <br />
+        Que vous ayez besoin de transformer des idées en projets concrets ou
+        d'une collaboration créative et efficace, je serais prêt à relever vos
+        défis. <br /> <br />
       </p>
     </div>
   );
