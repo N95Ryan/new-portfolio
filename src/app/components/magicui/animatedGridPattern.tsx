@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "../../../../utils";
+import { cn } from "../../../../../utils";
 import { motion } from "framer-motion";
 import { useEffect, useId, useRef, useState } from "react";
 
@@ -59,8 +59,8 @@ export function AnimatedGridPattern({
               ...sq,
               pos: getPos(),
             }
-          : sq,
-      ),
+          : sq
+      )
     );
   };
 
@@ -99,7 +99,7 @@ export function AnimatedGridPattern({
       aria-hidden="true"
       className={cn(
         "pointer-events-none absolute inset-0 h-full w-full fill-gray-400/30 stroke-gray-400/30",
-        className,
+        className
       )}
       {...props}
     >

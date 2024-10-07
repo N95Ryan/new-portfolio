@@ -7,13 +7,13 @@ import Footer from "./components/footer";
 
 export default function Page() {
   return (
-      <div id="home" className="relative h-screen w-screen">
-        <Navbar />
-        <BackgroundAnimation />
-        <Title />
-        <About />
-        <Skills />
-        <Footer />
-      </div>
-  )
+    <div id="home" className="relative h-screen w-screen">
+      <Navbar />
+      <BackgroundAnimation />
+      <Title />
+      <About />
+      <Skills />
+      <Footer />
+    </div>
+  );
 }

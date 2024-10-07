@@ -1,6 +1,7 @@
 "use client";
 
-import { cn } from "../../../../utils";
+import cn from "classnames";
+
 import { motion } from "framer-motion";
 
 interface LetterPullupProps {
@@ -38,7 +39,7 @@ export default function LetterPullUp({
           custom={i}
           className={cn(
             "font-display text-center text-l tracking-[-0.02em] text-black drop-shadow-sm dark:text-white text-2xl md:text-3xl md:leading-[5rem]",
-            className,
+            className
           )}
         >
           {letter === " " ? <span>&nbsp;</span> : letter}

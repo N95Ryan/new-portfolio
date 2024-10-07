@@ -13,7 +13,7 @@ export default function AboutInfos() {
           </li>
           <li className="flex items-start">
             <span className="text-indigo-400 mr-2 sm:text-xl">•</span>
-            Âge : 23 ans
+            Âge : 24 ans
           </li>
           <li className="flex items-start">
             <span className="text-indigo-400 mr-2 sm:text-xl">•</span>
