@@ -6,7 +6,7 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiGraphql,
-  SiAxios,
+  SiNodedotjs,
   SiExpress,
   SiWordpress,
   SiAdobephotoshop,
@@ -60,19 +60,19 @@ function skillsDetails() {
 
   const backSkills = [
     {
-      title: "Axios",
-      icon: <SiAxios />,
-      color: "#5c2ce4",
-    },
-    {
-      title: "GraphQL",
-      icon: <SiGraphql />,
-      color: "#E10098",
+      title: "Node.js",
+      icon: <SiNodedotjs />,
+      color: "#339933",
     },
     {
       title: "Express.js",
       icon: <SiExpress />,
       color: "#fff",
+    },
+    {
+      title: "GraphQL",
+      icon: <SiGraphql />,
+      color: "#E10098",
     },
     {
       title: "WordPress",
