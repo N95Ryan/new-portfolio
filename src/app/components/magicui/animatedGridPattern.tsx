@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/utils"; // Adjust the path based on your project structure
+import cn from "classnames";
 import { motion } from "framer-motion";
 import { useEffect, useId, useRef, useState } from "react";
 
