@@ -9,7 +9,7 @@ export function Title() {
         direction="down"
         text="Ryan PINA-SILASSE"
       />
-      <LetterPullUp words="Développeur Web Front-end" delay={0.1} />
+      <LetterPullUp words="Développeur Web Frontend" delay={0.1} />
     </div>
   );
 }

@@ -17,24 +17,26 @@ export default function AboutInfos() {
           </li>
           <li className="flex items-start">
             <span className="text-indigo-400 mr-2 sm:text-xl">•</span>
-            Localisation : Paris, Île-De-France, France
+            Localisation : Paris, France
           </li>
         </ul>
       </div>
       <p className="text-white text-base sm:text-lg mb-4 w-full sm:w-auto">
-        Fasciné par les innovations technologiques, mon esprit curieux me pousse
-        à toujours explorer de nouvelles choses. <br /> <br />
-        Au cours de ma carrière, j'ai pu développé un large éventail de
-        compétences, tant techniques qu'humaines, qui me permettent de m'adapter
-        rapidement et de concevoir des solutions digitales innovantes,
-        performantes et centrées sur l'utilisateur. <br />
-        <br />
-        Fort de mes expériences sur des projets variés et stimulants, je reste
-        animé par un désir constant d'apprentissage et d'innovation. <br />{" "}
-        <br />
-        Que vous ayez besoin de transformer des idées en projets concrets ou
-        d'une collaboration créative et efficace, je serais prêt à relever vos
-        défis. <br /> <br />
+        Depuis mon plus jeune âge, je baigne dans la technologie, une passion
+        qui m’a naturellement conduit vers une carrière dans ce domaine. <br />
+        Aujourd'hui développeur web de profession, mon parcours et ma curiosité
+        m’ont permis de cultiver des compétences techniques, tout en nourrissant
+        ma créativité. <br /> <br />
+        J’ai toujours soif d’apprendre et de découvrir de nouvelles façons de
+        faire ou de penser. Que ce soit en explorant des outils modernes comme
+        React et Next.js ou en élargissant mes horizons avec Golang,
+        l’innovation est au cœur de mon quotidien.
+        <br /> <br />
+        Aujourd’hui, je suis en recherche d’un poste où je pourrais mettre mes
+        compétences au service de projets ambitieux, tout en continuant à
+        apprendre et à innover. <br /> <br />
+        Disponible immédiatement, je suis prêt à transformer vos idées en
+        solutions concrètes et impactantes !
       </p>
     </div>
   );
