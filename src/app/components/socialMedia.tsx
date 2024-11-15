@@ -1,9 +1,9 @@
 import {
   SiGithub,
-  SiVercel,
-  SiStackoverflow,
-  SiBluesky,
   SiLinkedin,
+  SiBluesky,
+  SiVercel,
+  SiLeetcode,
 } from "react-icons/si";
 
 const SocialMedia = () => {
@@ -48,12 +48,12 @@ const SocialMedia = () => {
 
         <a
           className="icon"
-          href="https://stackoverflow.com/users/15477127/ryan"
+          href="https://leetcode.com/u/n95ryan/"
           target="blank"
         >
-          <SiStackoverflow
+          <SiLeetcode
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
-            title="Stack Overflow"
+            title="LeetCode"
           />
         </a>
       </div>
