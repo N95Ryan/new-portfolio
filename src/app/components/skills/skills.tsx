@@ -3,7 +3,7 @@ import SkillCard from "./SkillCard";
 import skillsDetails from "./skillDetails";
 
 export default function Skills() {
-  const { techSkills, frontSkills, backSkills, designSkills } = skillsDetails();
+  const { languages, frameworks, tools, design } = skillsDetails();
 
   type Skill = {
     title: string;
@@ -24,7 +24,10 @@ export default function Skills() {
 
   return (
     <>
-      <div id="skills" className="animate-fade-down animate-once animate-duration-[1300ms] mt-[5rem]">
+      <div
+        id="skills"
+        className="animate-fade-down animate-once animate-duration-[1300ms] mt-[5rem]"
+      >
         <h3 className="text-5xl font-semibold text-indigo-500 text-center mt-[3rem]">
           Mes skills
         </h3>
@@ -34,28 +37,30 @@ export default function Skills() {
       <div className="my-6 animate-jump-in">
         <p className="text-white text-3xl text-center my-4">Langages</p>
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mx-8 lg:mx-[20rem] gap-6">
-          {renderSkillCards(techSkills)}
+          {renderSkillCards(languages)}
         </div>
       </div>
 
       <div className="my-6 animate-jump-in">
-        <p className="text-white text-3xl text-center my-4">Front-end</p>
+        <p className="text-white text-3xl text-center my-4">
+          Frameworks / Bibliothèques
+        </p>
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mx-8 lg:mx-[20rem] gap-6">
-          {renderSkillCards(frontSkills)}
+          {renderSkillCards(frameworks)}
         </div>
       </div>
 
       <div className="my-6 animate-jump-in">
-        <p className="text-white text-3xl text-center my-4">Back-end</p>
+        <p className="text-white text-3xl text-center my-4">Outils</p>
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mx-8 lg:mx-[20rem] gap-6">
-          {renderSkillCards(backSkills)}
+          {renderSkillCards(tools)}
         </div>
       </div>
-      
+
       <div className="my-6 animate-jump-in">
-        <p className="text-white text-3xl text-center my-4">Conception graphique</p>
+        <p className="text-white text-3xl text-center my-4">Design</p>
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mx-8 lg:mx-[20rem] gap-6">
-          {renderSkillCards(designSkills)}
+          {renderSkillCards(design)}
         </div>
       </div>
     </>

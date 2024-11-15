@@ -1,22 +1,24 @@
 import {
   SiJavascript,
   SiTypescript,
-  SiSass,
   SiReact,
   SiNextdotjs,
+  SiBootstrap,
   SiTailwindcss,
+  SiGit,
+  SiDocker,
+  SiPostman,
   SiGraphql,
-  SiNodedotjs,
-  SiExpress,
   SiWordpress,
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiFigma,
 } from "react-icons/si";
 import { BiLogoGoLang } from "react-icons/bi";
+import { title } from "process";
 
 function skillsDetails() {
-  const techSkills = [
+  const languages = [
     {
       title: "JavaScript",
       icon: <SiJavascript />,
@@ -35,71 +37,79 @@ function skillsDetails() {
     },
   ];
 
-  const frontSkills = [
+  const frameworks = [
     {
       title: "React",
       icon: <SiReact />,
       color: "#61DAFB",
     },
+
     {
       title: "Next.js",
       icon: <SiNextdotjs />,
       color: "#fff",
     },
+
+    {
+      title: "Bootstrap",
+      icon: <SiBootstrap />,
+      color: "#7952B3",
+    },
+
     {
       title: "Tailwind",
       icon: <SiTailwindcss />,
       color: "#06B6D4",
     },
-    {
-      title: "Sass",
-      icon: <SiSass />,
-      color: "#cc6699",
-    },
   ];
 
-  const backSkills = [
+  const tools = [
     {
-      title: "Node.js",
-      icon: <SiNodedotjs />,
-      color: "#339933",
+      title: "Git",
+      icon: <SiGit />,
+      color: "#F05032",
     },
+
     {
-      title: "Express.js",
-      icon: <SiExpress />,
-      color: "#fff",
+      title: "Docker",
+      icon: <SiDocker />,
+      color: "#2496ED",
     },
+
+    {
+      title: "Postman",
+      icon: <SiPostman />,
+      color: "#FF6C37",
+    },
+
     {
       title: "GraphQL",
       icon: <SiGraphql />,
       color: "#E10098",
     },
-    {
-      title: "WordPress",
-      icon: <SiWordpress />,
-      color: "#21759B",
-    },
   ];
 
-  const designSkills = [
-    {
-      title: "Photoshop",
-      icon: <SiAdobephotoshop />,
-      color: "#31A8FF",
-    },
-    {
-      title: "Illustrator",
-      icon: <SiAdobeillustrator />,
-      color: "#FF9A00",
-    },
+  const design = [
     {
       title: "Figma",
       icon: <SiFigma />,
       color: "#F24E1E",
     },
+
+    {
+      title: "Photoshop",
+      icon: <SiAdobephotoshop />,
+      color: "#31A8FF",
+    },
+
+    {
+      title: "Illustrator",
+      icon: <SiAdobeillustrator />,
+      color: "#FF9A00",
+    },
   ];
 
-  return { techSkills, frontSkills, backSkills, designSkills };
+  return { languages, frameworks, tools, design };
 }
 
 export default skillsDetails;
