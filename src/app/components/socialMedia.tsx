@@ -30,7 +30,7 @@ const SocialMedia = () => {
 
         <a
           className="icon"
-          href="https://bsky.app/profile/bignayru.bsky.social"
+          href="https://bsky.app/profile/n95ryan.bsky.social"
           target="blank"
         >
           <SiBluesky
