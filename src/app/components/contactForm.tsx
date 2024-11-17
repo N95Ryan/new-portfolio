@@ -1,87 +1,139 @@
 "use client";
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback } from "react";
 
 export function ContactForm() {
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
-  const [responseMessage, setResponseMessage] = useState('');
-  const [isSending, setIsSending] = useState(false); // Indicateur de chargement
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [responseMessage, setResponseMessage] = useState("");
+  const [responseType, setResponseType] = useState<"success" | "error" | null>(
+    null
+  );
+  const [isSending, setIsSending] = useState(false);
 
-  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { id, value } = e.target;
-    setFormData((prevState) => ({ ...prevState, [id]: value }));
-  }, []);
-
-  const handleSubmit = useCallback(async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSending(true); // Démarre le chargement
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-      const result = await response.json();
-      if (response.ok) {
-        setResponseMessage('Email envoyé avec succès !');
-      } else {
-        setResponseMessage(`Erreur: ${result.message}`);
-      }
-    } catch (error) {
-      setResponseMessage("Erreur lors de l'envoi de l'email");
-    } finally {
-      setIsSending(false); // Termine le chargement
-    }
-  }, [formData]);
-
-  const inputClass = "my-2 py-2 px-4 rounded-md bg-gray-900 text-gray-300 w-full outline-none focus:ring-2 focus:ring-indigo-600";
-
-  const renderInputField = (id: string, type: string, placeholder: string, value: string) => (
-    <input
-      id={id}
-      type={type}
-      placeholder={placeholder}
-      className={inputClass}
-      value={value}
-      onChange={handleChange}
-      disabled={isSending} // Désactiver les champs pendant l'envoi
-    />
+  const handleChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      const { id, value } = e.target;
+      setFormData((prevState) => ({ ...prevState, [id]: value }));
+    },
+    []
   );
 
+  const validateForm = useCallback(() => {
+    const { name, email, subject, message } = formData;
+    if (!name || !email || !subject || !message) {
+      setResponseType("error");
+      setResponseMessage("Tous les champs sont obligatoires.");
+      return false;
+    }
+    return true;
+  }, [formData]);
+
+  const handleSubmit = useCallback(
+    async (e: React.FormEvent) => {
+      e.preventDefault();
+      if (!validateForm()) return;
+
+      setIsSending(true);
+      setResponseMessage("");
+      setResponseType(null);
+
+      try {
+        const response = await fetch("http://localhost:8080/api/send-email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...formData,
+            from: "contact@tondomaine.dev", // Adresse personnalisée
+          }),
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          setResponseType("success");
+          setResponseMessage("Email envoyé avec succès !");
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        } else {
+          setResponseType("error");
+          setResponseMessage(`Erreur: ${result.message}`);
+        }
+      } catch (error) {
+        setResponseType("error");
+        setResponseMessage("Erreur lors de l'envoi de l'email.");
+      } finally {
+        setIsSending(false);
+      }
+    },
+    [formData, validateForm]
+  );
+
+  const inputClass =
+    "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm";
+
   return (
-    <div className="h-screen">
-      <div className="pt-10 md:pt-20">
-        <div className="p-4 md:p-8">
-          <form className="flex flex-col items-center" onSubmit={handleSubmit}>
-            <div className="md:w-3/4 lg:w-2/3 xl:w-1/2">
-              <div className="flex flex-col md:flex-row">
-                {renderInputField("name", "text", "Votre nom", formData.name)}
-                {renderInputField("email", "email", "E-mail", formData.email)}
-              </div>
-              {renderInputField("subject", "text", "Objet", formData.subject)}
-              <textarea
-                id="message"
-                rows={5}
-                placeholder="Votre message"
-                className={inputClass}
-                value={formData.message}
-                onChange={handleChange}
-                disabled={isSending} // Désactiver le champ pendant l'envoi
-              ></textarea>
+    <div className="h-screen flex items-center justify-center">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h2 className="text-2xl font-bold mb-6 text-gray-900">
+          Contactez-nous
+        </h2>
+        <form onSubmit={handleSubmit}>
+          {["name", "email", "subject", "message"].map((field, index) => (
+            <div key={index} className="mb-4">
+              <label
+                htmlFor={field}
+                className="block text-sm font-medium text-gray-700"
+              >
+                {field === "message"
+                  ? "Message"
+                  : field.charAt(0).toUpperCase() + field.slice(1)}
+                :
+              </label>
+              {field === "message" ? (
+                <textarea
+                  id={field}
+                  rows={5}
+                  placeholder={`Votre ${field}`}
+                  className={inputClass}
+                  value={formData[field]}
+                  onChange={handleChange}
+                  disabled={isSending}
+                />
+              ) : (
+                <input
+                  id={field}
+                  type={field === "email" ? "email" : "text"}
+                  placeholder={`Votre ${field}`}
+                  className={inputClass}
+                  value={formData[field]}
+                  onChange={handleChange}
+                  disabled={isSending}
+                />
+              )}
             </div>
-            <button
-              type="submit"
-              className="text-md mt-5 rounded-md py-4 px-8 bg-indigo-600 hover:bg-indigo-800 text-gray-100 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-600"
-              disabled={isSending} // Désactiver le bouton pendant l'envoi
-            >
-              {isSending ? "Envoi en cours..." : "Envoyer"}
-            </button>
-          </form>
-          {responseMessage && (
-            <div className="mt-4 text-center text-gray-100">
-              {responseMessage}
-            </div>
-          )}
-        </div>
+          ))}
+          <button
+            type="submit"
+            className="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-800 text-white font-semibold rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            disabled={isSending}
+          >
+            {isSending ? "Envoi en cours..." : "Envoyer"}
+          </button>
+        </form>
+        {responseMessage && (
+          <div
+            className={`mt-4 text-center ${
+              responseType === "success" ? "text-green-500" : "text-red-500"
+            }`}
+          >
+            {responseMessage}
+          </div>
+        )}
       </div>
     </div>
   );

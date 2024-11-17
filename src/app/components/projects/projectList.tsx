@@ -25,9 +25,9 @@ export const projects = [
   },
   {
     title: "HairSwift",
-    stack: "React • Tailwind • Go",
+    stack: "Next • Tailwind • Go",
     description:
-      "Projet réalisé cafin d'explorer les capacités de Go. Il permet de gérer efficacement un salon de coiffure, avec des fonctionnalités telles que : Planification des rendez-vous, gestion des employés et suivi des services.",
+      "Projet réalisé afin d'explorer les capacités de Go. Il permet de gérer efficacement un salon de coiffure, avec des fonctionnalités telles que : Planification des rendez-vous, gestion des employés et suivi des services.",
     image: "/images/Projets/HairSwift.jpg",
     link: "https://github.com/N95Ryan/HairSwift",
     bgcolor: "#ffffff",
