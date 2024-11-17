@@ -110,7 +110,6 @@ export function ContactForm() {
                   type={field === "email" ? "email" : "text"}
                   placeholder={`Votre ${field}`}
                   className={inputClass}
-                  value={formData[field]}
                   onChange={handleChange}
                   disabled={isSending}
                 />
