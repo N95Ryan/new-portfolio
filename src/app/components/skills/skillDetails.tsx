@@ -9,13 +9,12 @@ import {
   SiDocker,
   SiPostman,
   SiGraphql,
-  SiWordpress,
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiFigma,
 } from "react-icons/si";
 import { BiLogoGoLang } from "react-icons/bi";
-import { title } from "process";
+import { FaPython } from "react-icons/fa";
 
 function skillsDetails() {
   const languages = [
@@ -28,6 +27,12 @@ function skillsDetails() {
       title: "TypeScript",
       icon: <SiTypescript />,
       color: "#007acc",
+    },
+
+    {
+      title: "Python",
+      icon: <FaPython />,
+      color: "#3776AB",
     },
 
     {
