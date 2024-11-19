@@ -32,7 +32,7 @@ func sendEmail(req *EmailRequest) error {
 	return d.DialAndSend(m)
 }
 
-// Fonction handler pour gérer les requêtes HTTP sur /api/send-email
+// Exporter la fonction handler pour qu'elle soit utilisée par Vercel
 func SendEmailHandler(w http.ResponseWriter, r *http.Request) {
 	// Vérifie que la méthode est POST
 	if r.Method != http.MethodPost {
