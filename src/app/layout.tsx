@@ -1,16 +1,19 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Ryan PINA-SILASSE | Développeur Web Frontend",
   description:
-    "Portfolio de Ryan PINA-SILASSE, développeur web frontend spécialisé en React. Découvrez mes projets, mes compétences et mon parcours.",
-  keywords:
-    "Ryan PINA-SILASSE, Développeur Web Frontend, Frontend developer, Développement Web, Paris, Île-de-France, Canada, Bootstrap, Tailwind, React Native, React, Next.js, Go, Portfolio, Hetic, Konbini, TypeScript, JavaScript, CSS3, HTML5",
-  authors: [{ name: "Ryan PINA-SILASSE" }],
+    "Portfolio de Ryan PINA-SILASSE, développeur frontend spécialisé en React & Next.js.",
+  openGraph: {
+    title: "Ryan PINA-SILASSE | Développeur Frontend React & Next.js",
+    description: "Découvrez mes projets, compétences et parcours.",
+    url: "https://ryanpinasilasse.dev",
+    type: "website",
+    locale: "fr_FR",
+  },
 };
 
 export default function RootLayout({
