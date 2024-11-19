@@ -51,7 +51,7 @@ export function ContactForm() {
             },
             body: JSON.stringify({
               ...formData,
-              from: "contact@tondomaine.dev", // Adresse personnalisée
+              from: "",
             }),
           }
         );
