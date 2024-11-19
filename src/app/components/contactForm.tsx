@@ -3,9 +3,9 @@ import React, { useState, useCallback } from "react";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
-    name: "",
+    nom: "",
     email: "",
-    subject: "",
+    objet: "",
     message: "",
   });
   const [responseMessage, setResponseMessage] = useState("");
@@ -23,8 +23,8 @@ export function ContactForm() {
   );
 
   const validateForm = useCallback(() => {
-    const { name, email, subject, message } = formData;
-    if (!name || !email || !subject || !message) {
+    const { nom, email, objet, message } = formData;
+    if (!nom || !email || !objet || !message) {
       setResponseType("error");
       setResponseMessage("Tous les champs sont obligatoires.");
       return false;
@@ -58,7 +58,7 @@ export function ContactForm() {
         if (response.ok) {
           setResponseType("success");
           setResponseMessage("Email envoyé avec succès !");
-          setFormData({ name: "", email: "", subject: "", message: "" });
+          setFormData({ nom: "", email: "", objet: "", message: "" });
         } else {
           setResponseType("error");
           setResponseMessage(`Erreur: ${result.message}`);
@@ -77,17 +77,14 @@ export function ContactForm() {
     "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm";
 
   return (
-    <div className="h-screen flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900">
-          Contactez-nous
-        </h2>
+    <div className="flex items-center justify-center">
+      <div className="h-screen p-6 rounded-lg w-full max-w-lg">
         <form onSubmit={handleSubmit}>
-          {["name", "email", "subject", "message"].map((field, index) => (
+          {["nom", "email", "objet", "message"].map((field, index) => (
             <div key={index} className="mb-4">
               <label
                 htmlFor={field}
-                className="block text-sm font-medium text-gray-700"
+                className="block text-lg font-medium text-white"
               >
                 {field === "message"
                   ? "Message"

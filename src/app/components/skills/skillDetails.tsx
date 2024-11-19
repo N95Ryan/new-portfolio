@@ -1,6 +1,7 @@
 import {
   SiJavascript,
   SiTypescript,
+  SiPython,
   SiReact,
   SiNextdotjs,
   SiBootstrap,
@@ -14,7 +15,6 @@ import {
   SiFigma,
 } from "react-icons/si";
 import { BiLogoGoLang } from "react-icons/bi";
-import { FaPython } from "react-icons/fa";
 
 function skillsDetails() {
   const languages = [
@@ -31,8 +31,8 @@ function skillsDetails() {
 
     {
       title: "Python",
-      icon: <FaPython />,
-      color: "#3776AB",
+      icon: <SiPython />,
+      color: "#ffde57",
     },
 
     {
