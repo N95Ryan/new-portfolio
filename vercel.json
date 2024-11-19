@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/api/send-email", "destination": "/backend/api" }
+    ]
+  }
+  
