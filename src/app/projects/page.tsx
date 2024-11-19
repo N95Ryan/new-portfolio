@@ -11,7 +11,7 @@ export default function Page() {
       <BackgroundAnimation />
       <div className="animate-fade-down animate-once animate-duration-1300 flex-grow">
         <h3 className="text-5xl font-semibold text-indigo-500 text-center">
-          Mes Réalisations
+          Mes réalisations
         </h3>
         <hr className="my-8 border-t border-indigo-700 w-1/2 mx-auto" />
       </div>
