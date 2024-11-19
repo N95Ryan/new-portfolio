@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-dev": "vercel dev"    
   },
+  
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
@@ -34,7 +36,8 @@
     "react-icon-cloud": "^4.1.4",
     "react-icons": "^5.2.1",
     "sharp": "^0.33.5",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "vercel": "^39.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,6 +1,15 @@
 {
-    "rewrites": [
-      { "source": "/api/send-email", "destination": "/backend/api" }
+    "builds": [
+      {
+        "src": "backend/main.go",
+        "use": "@vercel/go"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/send-email",
+        "dest": "/backend/main"
+      }
     ]
   }
   
