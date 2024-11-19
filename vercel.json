@@ -1,14 +1,14 @@
 {
     "builds": [
       {
-        "src": "backend/send-email.go",
+        "src": "backend/main.go",
         "use": "@vercel/go"
       }
     ],
     "routes": [
       {
         "src": "/api/send-email",
-        "dest": "/backend/send-email.go"
+        "dest": "/backend/main.go"
       }
     ]
   }
