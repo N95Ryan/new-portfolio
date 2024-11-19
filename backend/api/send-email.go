@@ -9,6 +9,7 @@ import (
 	"gopkg.in/mail.v2"
 )
 
+// EmailRequest représente la structure de la requête d'email
 type EmailRequest struct {
 	Name    string `json:"name"`
 	Email   string `json:"email"`
@@ -16,10 +17,10 @@ type EmailRequest struct {
 	Message string `json:"message"`
 }
 
+// sendEmail envoie l'email via un serveur SMTP
 func sendEmail(req *EmailRequest) error {
 	// Configurez les informations de votre serveur SMTP (exemple avec Mailgun, Mailjet, etc.)
 	m := mail.NewMessage()
-
 	m.SetHeader("From", "votre-email@example.com")
 	m.SetHeader("To", "destinataire@example.com")
 	m.SetHeader("Subject", req.Subject)
@@ -32,8 +33,8 @@ func sendEmail(req *EmailRequest) error {
 	return d.DialAndSend(m)
 }
 
-// Exporter la fonction handler pour qu'elle soit utilisée par Vercel
-func SendEmailHandler(w http.ResponseWriter, r *http.Request) {
+// Handler qui répond aux requêtes HTTP
+func handler(w http.ResponseWriter, r *http.Request) {
 	// Vérifie que la méthode est POST
 	if r.Method != http.MethodPost {
 		http.Error(w, "Méthode non autorisée", http.StatusMethodNotAllowed)
@@ -65,4 +66,9 @@ func SendEmailHandler(w http.ResponseWriter, r *http.Request) {
 	// Réponse en cas de succès
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte(`{"message": "Email envoyé avec succès."}`))
+}
+
+func main() {
+	// Exporter la fonction de handler pour être utilisée par Vercel
+	http.HandleFunc("/api/send-email", handler)
 }

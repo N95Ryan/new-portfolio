@@ -10,11 +10,6 @@
         "src": "/api/send-email",
         "dest": "/backend/send-email.go"
       }
-    ],
-    "functions": {
-      "api/send-email.go": {
-        "runtime": "go1.x"
-      }
-    }
+    ]
   }
   
