@@ -42,18 +42,21 @@ export function ContactForm() {
       setResponseType(null);
 
       try {
-        const response = await fetch("http://localhost:8080/api/send-email", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...formData,
-            from: "contact@tondomaine.dev", // Adresse personnalisée
-          }),
-        });
+        const response = await fetch(
+          "https://portfolio-back-hn94.onrender.com/api/send-email",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              ...formData,
+              from: "contact@tondomaine.dev", // Adresse personnalisée
+            }),
+          }
+        );
 
-        const result = await response.json();
+        const result = await response.json(); // Lecture de la réponse JSON
 
         if (response.ok) {
           setResponseType("success");
@@ -61,11 +64,12 @@ export function ContactForm() {
           setFormData({ nom: "", email: "", objet: "", message: "" });
         } else {
           setResponseType("error");
-          setResponseMessage(`Erreur: ${result.message}`);
+          setResponseMessage(`Erreur: ${result.message || "Erreur inconnue"}`);
         }
       } catch (error) {
         setResponseType("error");
         setResponseMessage("Erreur lors de l'envoi de l'email.");
+        console.error("Erreur de connexion avec l'API:", error);
       } finally {
         setIsSending(false);
       }
