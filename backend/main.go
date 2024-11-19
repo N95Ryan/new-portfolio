@@ -17,6 +17,7 @@ type EmailRequest struct {
 	Message string `json:"message"`
 }
 
+// handler est la fonction qui gère l'envoi de l'email.
 func handler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
 		http.Error(w, "Méthode non autorisée", http.StatusMethodNotAllowed)
@@ -94,8 +95,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func main() {
-	// Démarrer le handler (fonction unique pour les fonctions serverless)
-	http.HandleFunc("/", handler)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+// Exporte la fonction handler comme fonction de Vercel
+func SendEmailHandler(w http.ResponseWriter, r *http.Request) {
+	handler(w, r)
 }

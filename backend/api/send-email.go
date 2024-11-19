@@ -32,7 +32,8 @@ func sendEmail(req *EmailRequest) error {
 	return d.DialAndSend(m)
 }
 
-func sendEmailHandler(w http.ResponseWriter, r *http.Request) {
+// Fonction handler pour gérer les requêtes HTTP sur /api/send-email
+func SendEmailHandler(w http.ResponseWriter, r *http.Request) {
 	// Vérifie que la méthode est POST
 	if r.Method != http.MethodPost {
 		http.Error(w, "Méthode non autorisée", http.StatusMethodNotAllowed)
@@ -64,9 +65,4 @@ func sendEmailHandler(w http.ResponseWriter, r *http.Request) {
 	// Réponse en cas de succès
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte(`{"message": "Email envoyé avec succès."}`))
-}
-
-func main() {
-	http.HandleFunc("/api/send-email", sendEmailHandler)
-	log.Fatal(http.ListenAndServe(":8080", nil))
 }
