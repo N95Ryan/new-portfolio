@@ -8,8 +8,9 @@ export const metadata = {
   description:
     "Portfolio de Ryan PINA-SILASSE, développeur frontend spécialisé en React & Next.js.",
   openGraph: {
-    title: "Ryan PINA-SILASSE | Développeur Frontend React & Next.js",
-    description: "Découvrez mes projets, compétences et parcours.",
+    title:
+      "Portfolio de Ryan PINA-SILASSE, développeur frontend spécialisé en React & Next.js.",
+    description: "Découvrez mes projets, mes compétences et mon parcours.",
     url: "https://ryanpinasilasse.dev",
     type: "website",
     locale: "fr_FR",
