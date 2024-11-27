@@ -1,6 +1,11 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
+import type { ReactNode } from "react";
+
+interface LayoutProps {
+  children: ReactNode;
+}
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,17 +23,12 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-  params: {
-    locale: string;
-  };
-}>) {
+export default function RootLayout({ children }: LayoutProps) {
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+
   return (
     <html lang="fr">
-      <GoogleTagManager gtmId="G-R6JQ08HE7F" />
+      {gtmId && <GoogleTagManager gtmId={gtmId} />}
       <body className={inter.className}>{children}</body>
     </html>
   );
