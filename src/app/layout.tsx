@@ -26,11 +26,9 @@ export default function RootLayout({
     locale: string;
   };
 }>) {
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
-
   return (
     <html lang="fr">
-      {gtmId && <GoogleTagManager gtmId={gtmId} />}
+      <GoogleTagManager gtmId="G-R6JQ08HE7F" />
       <body className={inter.className}>{children}</body>
     </html>
   );
