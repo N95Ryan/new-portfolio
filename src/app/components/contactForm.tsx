@@ -42,22 +42,6 @@ export function ContactForm() {
       setResponseType(null);
 
       try {
-        // Charger le script reCAPTCHA si ce n'est pas déjà fait
-        if (!window.grecaptcha) {
-          setResponseType("error");
-          setResponseMessage("CAPTCHA non chargé. Veuillez réessayer.");
-          return;
-        }
-
-        // Obtenir le jeton reCAPTCHA
-        const captchaToken = await window.grecaptcha.execute(
-          "6Lf7C4sqAAAAAP1TtREMe-A2Us6-7KwuEV-rnISY",
-          {
-            action: "submit",
-          }
-        );
-
-        // Envoyer les données du formulaire avec le jeton reCAPTCHA
         const response = await fetch(
           "https://portfolio-back-hn94.onrender.com/api/send-email",
           {
@@ -67,7 +51,6 @@ export function ContactForm() {
             },
             body: JSON.stringify({
               ...formData,
-              captchaToken, // Inclure le jeton
               from: "",
             }),
           }
