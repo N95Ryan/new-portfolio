@@ -1,5 +1,7 @@
+// pages/contact.tsx
 "use client";
 import React, { useState, useCallback } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -13,6 +15,7 @@ export function ContactForm() {
     null
   );
   const [isSending, setIsSending] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
 
   const handleChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -22,6 +25,10 @@ export function ContactForm() {
     []
   );
 
+  const handleRecaptcha = (token: string | null) => {
+    setRecaptchaToken(token);
+  };
+
   const validateForm = useCallback(() => {
     const { nom, email, objet, message } = formData;
     if (!nom || !email || !objet || !message) {
@@ -29,8 +36,13 @@ export function ContactForm() {
       setResponseMessage("Tous les champs sont obligatoires.");
       return false;
     }
+    if (!recaptchaToken) {
+      setResponseType("error");
+      setResponseMessage("Veuillez valider le reCAPTCHA.");
+      return false;
+    }
     return true;
-  }, [formData]);
+  }, [formData, recaptchaToken]);
 
   const handleSubmit = useCallback(
     async (e: React.FormEvent) => {
@@ -51,12 +63,13 @@ export function ContactForm() {
             },
             body: JSON.stringify({
               ...formData,
+              recaptchaToken, // Ajoute le token reCAPTCHA
               from: "",
             }),
           }
         );
 
-        const result = await response.json(); // Lecture de la réponse JSON
+        const result = await response.json();
 
         if (response.ok) {
           setResponseType("success");
@@ -74,7 +87,7 @@ export function ContactForm() {
         setIsSending(false);
       }
     },
-    [formData, validateForm]
+    [formData, recaptchaToken, validateForm]
   );
 
   const inputClass =
@@ -117,6 +130,12 @@ export function ContactForm() {
               )}
             </div>
           ))}
+          <div className="my-4 flex justify-center">
+            <ReCAPTCHA
+              sitekey={"6Lf7C4sqAAAAAP1TtREMe-A2Us6-7KwuEV-rnISY"}
+              onChange={handleRecaptcha}
+            />
+          </div>
           <button
             type="submit"
             className="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-800 text-white font-semibold rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
