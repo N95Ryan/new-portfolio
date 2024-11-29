@@ -1,7 +1,6 @@
 // pages/contact.tsx
 "use client";
 import React, { useState, useCallback } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -63,7 +62,6 @@ export function ContactForm() {
             },
             body: JSON.stringify({
               ...formData,
-              recaptchaToken, // Ajoute le token reCAPTCHA
               from: "",
             }),
           }
@@ -130,12 +128,6 @@ export function ContactForm() {
               )}
             </div>
           ))}
-          <div className="my-4 flex justify-center">
-            <ReCAPTCHA
-              sitekey={"6Lf7C4sqAAAAAP1TtREMe-A2Us6-7KwuEV-rnISY"}
-              onChange={handleRecaptcha}
-            />
-          </div>
           <button
             type="submit"
             className="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-800 text-white font-semibold rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
