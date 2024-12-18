@@ -43,7 +43,7 @@ export function ContactForm() {
 
       try {
         const response = await fetch(
-          "https://portfolio-back-hn94.onrender.com/",
+          "https://portfolio-back-hn94.onrender.com/api/send-email",
           {
             method: "POST",
             headers: {
@@ -51,7 +51,7 @@ export function ContactForm() {
             },
             body: JSON.stringify({
               ...formData,
-              from: "contact@tondomaine.dev", // Adresse personnalisée
+              from: "contact@tondomaine.dev",
             }),
           }
         );
