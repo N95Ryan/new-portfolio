@@ -1,4 +1,3 @@
-// pages/contact.tsx
 "use client";
 import React, { useState, useCallback } from "react";
 
@@ -14,7 +13,6 @@ export function ContactForm() {
     null
   );
   const [isSending, setIsSending] = useState(false);
-  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
 
   const handleChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -24,10 +22,6 @@ export function ContactForm() {
     []
   );
 
-  const handleRecaptcha = (token: string | null) => {
-    setRecaptchaToken(token);
-  };
-
   const validateForm = useCallback(() => {
     const { nom, email, objet, message } = formData;
     if (!nom || !email || !objet || !message) {
@@ -35,13 +29,8 @@ export function ContactForm() {
       setResponseMessage("Tous les champs sont obligatoires.");
       return false;
     }
-    if (!recaptchaToken) {
-      setResponseType("error");
-      setResponseMessage("Veuillez valider le reCAPTCHA.");
-      return false;
-    }
     return true;
-  }, [formData, recaptchaToken]);
+  }, [formData]);
 
   const handleSubmit = useCallback(
     async (e: React.FormEvent) => {
@@ -54,7 +43,7 @@ export function ContactForm() {
 
       try {
         const response = await fetch(
-          "https://portfolio-back-hn94.onrender.com/api/send-email",
+          "https://portfolio-back-hn94.onrender.com/",
           {
             method: "POST",
             headers: {
@@ -62,7 +51,7 @@ export function ContactForm() {
             },
             body: JSON.stringify({
               ...formData,
-              from: "",
+              from: "contact@tondomaine.dev", // Adresse personnalisée
             }),
           }
         );
@@ -75,17 +64,16 @@ export function ContactForm() {
           setFormData({ nom: "", email: "", objet: "", message: "" });
         } else {
           setResponseType("error");
-          setResponseMessage(`Erreur: ${result.message || "Erreur inconnue"}`);
+          setResponseMessage(`Erreur: ${result.message}`);
         }
       } catch (error) {
         setResponseType("error");
         setResponseMessage("Erreur lors de l'envoi de l'email.");
-        console.error("Erreur de connexion avec l'API:", error);
       } finally {
         setIsSending(false);
       }
     },
-    [formData, recaptchaToken, validateForm]
+    [formData, validateForm]
   );
 
   const inputClass =

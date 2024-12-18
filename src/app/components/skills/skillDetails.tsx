@@ -4,6 +4,8 @@ import {
   SiPython,
   SiReact,
   SiNextdotjs,
+  SiAstro,
+  SiNodedotjs,
   SiBootstrap,
   SiTailwindcss,
   SiGit,
