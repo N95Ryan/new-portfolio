@@ -8,9 +8,9 @@ interface LayoutProps {
 
 export const metadata = {
   title: "Ryan PINA-SILASSE | Développeur Web & Mobile",
-  description: "Portfolio de Ryan PINA-SILASSE, développeur web et mobile",
+  description: "Portfolio de Ryan PINA-SILASSE, Développeur Web & Mobile",
   openGraph: {
-    title: "Portfolio de Ryan PINA-SILASSE, développeur web et mobile",
+    title: "Portfolio de Ryan PINA-SILASSE, Développeur Web & Mobile",
     description: "Découvrez mes projets, mes compétences et mon parcours.",
     url: "https://ryan-pina.dev",
     type: "website",
