@@ -1,35 +1,28 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
 import type { ReactNode } from "react";
 
 interface LayoutProps {
   children: ReactNode;
+  params: { locale: string };
 }
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
-  title: "Ryan PINA-SILASSE | Développeur Web Frontend",
-  description:
-    "Portfolio de Ryan PINA-SILASSE, développeur frontend spécialisé en React & Next.js.",
+  title: "Ryan PINA-SILASSE | Développeur Web & Mobile",
+  description: "Portfolio de Ryan PINA-SILASSE, développeur web et mobile",
   openGraph: {
-    title:
-      "Portfolio de Ryan PINA-SILASSE, développeur frontend spécialisé en React & Next.js.",
+    title: "Portfolio de Ryan PINA-SILASSE, développeur web et mobile",
     description: "Découvrez mes projets, mes compétences et mon parcours.",
-    url: "https://ryanpinasilasse.dev",
+    url: "https://ryan-pina.dev",
     type: "website",
-    locale: "fr_FR",
   },
 };
 
-export default function RootLayout({ children }: LayoutProps) {
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+export default async function RootLayout({ children, params }: LayoutProps) {
+  const { locale } = params;
 
   return (
-    <html lang="fr">
-      {gtmId && <GoogleTagManager gtmId={gtmId} />}
-      <body className={inter.className}>{children}</body>
+    <html lang={locale}>
+      <body>{children}</body>
     </html>
   );
 }

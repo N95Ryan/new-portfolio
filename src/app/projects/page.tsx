@@ -16,7 +16,7 @@ export default function Page() {
         <hr className="my-8 border-t border-indigo-700 w-1/2 mx-auto" />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-4 animate-fade-up flex-grow">
-        {projects.map((project) => (
+        {projects.map((project: any) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>

@@ -5,7 +5,8 @@ import About from "./components/about/about";
 import Skills from "./components/skills/skills";
 import Footer from "./components/footer";
 
-export default function Page() {
+export default function Homepage() {
+  // const t = await getI18n();
   return (
     <div id="home" className="relative h-screen w-screen">
       <Navbar />

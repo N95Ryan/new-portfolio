@@ -28,9 +28,10 @@ export default function AboutInfos() {
         m’ont permis de cultiver des compétences techniques, tout en nourrissant
         ma créativité. <br /> <br />
         J’ai toujours soif d’apprendre et de découvrir de nouvelles façons de
-        faire ou de penser. Que ce soit en explorant des outils modernes comme
-        React et Next.js ou en élargissant mes horizons avec Golang,
-        l’innovation est au cœur de mon quotidien.
+        faire ou de penser. Que ce soit en utilisant des outils telles que React
+        et Next.js. Ou en élargissant mes horizons avec Golang pour tendre vers
+        un rôle Fullstack. <br /> <br />
+        L’innovation est au cœur de mon quotidien.
         <br /> <br />
         Aujourd’hui, je suis en recherche d’un poste où je pourrais mettre mes
         compétences au service de projets ambitieux, tout en continuant à
