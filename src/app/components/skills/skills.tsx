@@ -58,7 +58,7 @@ export default function Skills() {
       </div>
 
       <div className="my-6 animate-jump-in">
-        <p className="text-white text-3xl text-center my-4">Design</p>
+        <p className="text-white text-3xl text-center my-4">UX / UI</p>
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mx-8 lg:mx-[20rem] gap-6">
           {renderSkillCards(design)}
         </div>

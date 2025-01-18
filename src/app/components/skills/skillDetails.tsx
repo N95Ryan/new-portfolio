@@ -1,13 +1,12 @@
 import {
+  SiHtml5,
+  SiCss3,
   SiJavascript,
   SiTypescript,
-  SiPython,
   SiReact,
   SiNextdotjs,
-  SiAstro,
-  SiNodedotjs,
-  SiBootstrap,
   SiTailwindcss,
+  SiShadcnui,
   SiGit,
   SiDocker,
   SiPostman,
@@ -16,10 +15,21 @@ import {
   SiAdobeillustrator,
   SiFigma,
 } from "react-icons/si";
-import { BiLogoGoLang } from "react-icons/bi";
 
 function skillsDetails() {
   const languages = [
+    {
+      title: "HTML5",
+      icon: <SiHtml5 />,
+      color: "#e34c26",
+    },
+
+    {
+      title: "CSS3",
+      icon: <SiCss3 />,
+      color: "#2965f1",
+    },
+
     {
       title: "JavaScript",
       icon: <SiJavascript />,
@@ -29,18 +39,6 @@ function skillsDetails() {
       title: "TypeScript",
       icon: <SiTypescript />,
       color: "#007acc",
-    },
-
-    {
-      title: "Python",
-      icon: <SiPython />,
-      color: "#ffde57",
-    },
-
-    {
-      title: "Go",
-      icon: <BiLogoGoLang />,
-      color: "#00ADD8",
     },
   ];
 
@@ -58,15 +56,15 @@ function skillsDetails() {
     },
 
     {
-      title: "Bootstrap",
-      icon: <SiBootstrap />,
-      color: "#7952B3",
-    },
-
-    {
       title: "Tailwind",
       icon: <SiTailwindcss />,
       color: "#06B6D4",
+    },
+
+    {
+      title: "shadcn/ui",
+      icon: <SiShadcnui />,
+      color: "#fff",
     },
   ];
 
