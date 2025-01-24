@@ -1,5 +1,7 @@
 import "./globals.css";
 import type { ReactNode } from "react";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 
 interface LayoutProps {
   children: ReactNode;
@@ -18,11 +20,16 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children, params }: LayoutProps) {
-  const { locale } = params;
+  const locale = await getLocale();
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      <body>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }
