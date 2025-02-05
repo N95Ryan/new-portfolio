@@ -1,10 +1,7 @@
-import { use } from "react";
 import { FadeText } from "./magicui/fadeText";
 import LetterPullUp from "./magicui/letterPullUp";
-import { useTranslations } from "next-intl";
 
 export function Title() {
-  const t = useTranslations("ob");
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <FadeText
