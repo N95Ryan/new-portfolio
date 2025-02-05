@@ -3,7 +3,7 @@ import {
   SiLinkedin,
   SiBluesky,
   SiVercel,
-  SiLeetcode,
+  SiMalt,
 } from "react-icons/si";
 
 const SocialMedia = () => {
@@ -48,12 +48,12 @@ const SocialMedia = () => {
 
         <a
           className="icon"
-          href="https://leetcode.com/u/n95ryan/"
+          href="https://www.malt.fr/profile/ryanpinasilasse"
           target="blank"
         >
-          <SiLeetcode
+          <SiMalt
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
-            title="LeetCode"
+            title="Malt"
           />
         </a>
       </div>
