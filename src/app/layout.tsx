@@ -5,7 +5,6 @@ import { getLocale, getMessages } from "next-intl/server";
 
 interface LayoutProps {
   children: ReactNode;
-  params: { locale: string };
 }
 
 export const metadata = {
@@ -19,9 +18,9 @@ export const metadata = {
   },
 };
 
-export default async function RootLayout({ children, params }: LayoutProps) {
+export default async function RootLayout({ children }: LayoutProps) {
   const locale = await getLocale();
-  const messages = await getMessages({ locale });
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
