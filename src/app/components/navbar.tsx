@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,6 +10,8 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const t = useTranslations();
 
   return (
     <nav className="py-4 px-4 md:px-8 lg:px-12">
@@ -59,22 +62,22 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex justify-center items-center z-50">
           <div className="bg-zinc-900 rounded-lg p-6 w-92 text-center">
-          <div className="flex my-2 justify-end" onClick={toggleMenu}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="h-6 w-6 text-white cursor-pointer"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 6L18 18M6 18L18 6"
-                  />
-                </svg>
-              </div>
+            <div className="flex my-2 justify-end" onClick={toggleMenu}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="h-6 w-6 text-white cursor-pointer"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 6L18 18M6 18L18 6"
+                />
+              </svg>
+            </div>
 
             <div className="flex justify-center">
               <p className="text-xl font-extralight text-white opacity-25">
@@ -88,7 +91,7 @@ export default function Navbar() {
                   className="block hover:text-purple-600 transition duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                Accueil
+                  Accueil
                 </Link>
               </li>
               <li>

@@ -1,10 +1,13 @@
 import "./globals.css";
 import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 
 interface LayoutProps {
   children: ReactNode;
+  params: {
+    locale: string; // Paramètre pour la langue dynamique
+  };
 }
 
 export const metadata = {
@@ -18,9 +21,11 @@ export const metadata = {
   },
 };
 
-export default async function RootLayout({ children }: LayoutProps) {
-  const locale = await getLocale();
-  const messages = await getMessages();
+export default async function RootLayout({
+  children,
+  params: { locale },
+}: LayoutProps) {
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
