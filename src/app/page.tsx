@@ -11,7 +11,6 @@ export default function Homepage() {
   return (
     <div id="home" className="relative h-screen w-screen">
       <Navbar />
-      <h1 className=" flex justify-center text-white">{t("job")}</h1>
       <BackgroundAnimation />
       <Title />
       <About />
