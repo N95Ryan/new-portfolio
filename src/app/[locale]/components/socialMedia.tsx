@@ -53,7 +53,7 @@ const SocialMedia = () => {
         >
           <SiMalt
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
-            title="LeetCode"
+            title="Malt"
           />
         </a>
       </div>

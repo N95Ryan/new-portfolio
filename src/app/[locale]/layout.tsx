@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages } from "next-intl/server"; // Assure-toi que cette fonction est bien importée
 
 interface LayoutProps {
   children: ReactNode;
@@ -11,8 +11,6 @@ interface LayoutProps {
 }
 
 export const metadata = {
-  title: "Ryan PINA-SILASSE | Développeur Web & Mobile",
-  description: "Portfolio de Ryan PINA-SILASSE, Développeur Web & Mobile",
   openGraph: {
     title: "Portfolio de Ryan PINA-SILASSE, Développeur Web & Mobile",
     description: "Découvrez mes projets, mes compétences et mon parcours.",
@@ -30,7 +28,8 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          {" "}
           {children}
         </NextIntlClientProvider>
       </body>

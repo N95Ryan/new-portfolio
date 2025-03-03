@@ -21,13 +21,6 @@
   "cta": {
     "open_cv": "Ouvrir mon CV"
   },
-  "socials": {
-    "github": "Github",
-    "linkedin": "LinkedIn",
-    "bluesky": "BlueSky",
-    "vercel": "Vercel",
-    "leetcode": "LeetCode"
-  },
   "skills": {
     "title": "Mes skills",
     "languages": "Langages",
@@ -85,8 +78,5 @@
       "message": "Message",
       "send": "Envoyer"
     }
-  },
-  "footer": {
-    "copyright": "©2025 Copyright : Ryan Pina-Silasse"
   }
 }
