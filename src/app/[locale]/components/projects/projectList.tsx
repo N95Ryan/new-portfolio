@@ -2,6 +2,18 @@ import ProjectCard from "./projectCard";
 
 export const projects = [
   {
+    title: "Lift Up !",
+    stack: "React",
+    description:
+      "Lift Up ! est une application mobile conçue pour les passionnés de musculation et de fitness. Son objectif est de simplifier la conversion des poids entre livres et kilogrammes, afin que chacun puisse s’entraîner sans se poser de questions.",
+    image: "/images/Projets/Lift-Up.jpg",
+    link: "https://github.com/N95Ryan/Lift-Up",
+    bgcolor: "#fff",
+    textColor: "#000",
+    id: "0",
+  },
+
+  {
     title: "Bumble B",
     stack: "React Native • Expo",
     description:
@@ -10,7 +22,7 @@ export const projects = [
     link: "https://github.com/N95Ryan/Bumble-B",
     bgcolor: "#322c2b",
     textColor: "#ffffff",
-    id: "0",
+    id: "1",
   },
   {
     title: "Konbini",
@@ -21,7 +33,7 @@ export const projects = [
     link: "https://www.konbini.com/",
     bgcolor: "#b91c1c",
     textColor: "#ffffff",
-    id: "1",
+    id: "2",
   },
   {
     title: "HairSwift",
@@ -32,7 +44,7 @@ export const projects = [
     link: "https://github.com/N95Ryan/HairSwift",
     bgcolor: "#ffffff",
     textColor: "#000000",
-    id: "2",
+    id: "3",
   },
   {
     title: "Bitjutsu",
@@ -43,7 +55,7 @@ export const projects = [
     link: "https://bijutsu-n95ryan.vercel.app/",
     bgcolor: "#fff",
     textColor: "#000000",
-    id: "3",
+    id: "4",
   },
   {
     title: "EcoMap",
@@ -54,7 +66,7 @@ export const projects = [
     link: "https://www.figma.com/proto/SELGWIlBrSMJ0Bqe02toWk/Eco---Map?node-id=281-4983&starting-point-node-id=250%3A3263",
     bgcolor: "#047857",
     textColor: "#ffffff",
-    id: "4",
+    id: "5",
   },
   {
     title: "Calculatrice",
@@ -65,7 +77,18 @@ export const projects = [
     link: "https://calculatrice-react.vercel.app/",
     bgcolor: "#61DAFB",
     textColor: "#000000",
-    id: "5",
+    id: "6",
+  },
+  {
+    title: "Jeu du morpion",
+    stack: "JavaScript",
+    description:
+      'Ce projet est un jeu de Morpion (Tic-Tac-Toe) en ligne, programmé en JavaScript. Deux joueurs s\'affrontent en plaçant alternativement des "X" et des "O" sur une grille de 3x3. L\'objectif est d\'aligner trois symboles identiques (horizontalement, verticalement ou en diagonale) avant son adversaire.',
+    image: "/images/Projets/Tic-tac-toe.jpg",
+    link: "https://github.com/N95Ryan/Tic-tac-toe",
+    bgcolor: "#fff",
+    textColor: "#000000",
+    id: "7",
   },
 ];
 
