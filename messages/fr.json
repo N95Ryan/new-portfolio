@@ -101,6 +101,14 @@
       "subject": "Objet",
       "message": "Message",
       "send": "Envoyer"
+    },
+    "messages": {
+      "success": "Email envoyé avec succès !",
+      "error_method_not_allowed": "Méthode non autorisée",
+      "error_json_decode": "Erreur de décodage JSON",
+      "error_payload_conversion": "Erreur lors de la conversion du payload",
+      "error_http_request": "Erreur lors de la création de la requête HTTP",
+      "error_email_send": "Erreur lors de l'envoi de l'email"
     }
   },
   "footer": {

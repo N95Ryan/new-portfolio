@@ -1,139 +1,123 @@
 "use client";
-import React, { useState, useCallback } from "react";
+import { useState } from "react";
+import { useTranslations, useLocale } from "next-intl";
 
 export function ContactForm() {
-  const [formData, setFormData] = useState({
-    nom: "",
-    email: "",
-    objet: "",
-    message: "",
-  });
-  const [responseMessage, setResponseMessage] = useState("");
-  const [responseType, setResponseType] = useState<"success" | "error" | null>(
-    null
-  );
-  const [isSending, setIsSending] = useState(false);
+  const t = useTranslations("contact.form");
+  const tMessages = useTranslations("contact.messages");
+  const locale = useLocale();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [response, setResponse] = useState("");
+  const [error, setError] = useState("");
 
-  const handleChange = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      const { id, value } = e.target;
-      setFormData((prevState) => ({ ...prevState, [id]: value }));
-    },
-    []
-  );
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setResponse("");
+    setError("");
 
-  const validateForm = useCallback(() => {
-    const { nom, email, objet, message } = formData;
-    if (!nom || !email || !objet || !message) {
-      setResponseType("error");
-      setResponseMessage("Tous les champs sont obligatoires.");
-      return false;
-    }
-    return true;
-  }, [formData]);
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, subject, message, locale }),
+      });
+      const data = await res.json();
 
-  const handleSubmit = useCallback(
-    async (e: React.FormEvent) => {
-      e.preventDefault();
-      if (!validateForm()) return;
-
-      setIsSending(true);
-      setResponseMessage("");
-      setResponseType(null);
-
-      try {
-        const response = await fetch(
-          "https://portfolio-back-hn94.onrender.com/api/send-email",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              ...formData,
-              from: "contact@tondomaine.dev",
-            }),
-          }
-        );
-
-        const result = await response.json();
-
-        if (response.ok) {
-          setResponseType("success");
-          setResponseMessage("Email envoyé avec succès !");
-          setFormData({ nom: "", email: "", objet: "", message: "" });
-        } else {
-          setResponseType("error");
-          setResponseMessage(`Erreur: ${result.message}`);
-        }
-      } catch (error) {
-        setResponseType("error");
-        setResponseMessage("Erreur lors de l'envoi de l'email.");
-      } finally {
-        setIsSending(false);
+      if (res.ok) {
+        setResponse(tMessages("success")); // Traduit localement
+      } else {
+        const errorMsg = data.message || "error_email_send";
+        const translatedError =
+          tMessages(errorMsg.toLowerCase().replace(/ /g, "_")) || errorMsg;
+        setError(translatedError);
       }
-    },
-    [formData, validateForm]
-  );
-
-  const inputClass =
-    "mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm";
+    } catch (err) {
+      setError(tMessages("error_email_send")); // Fallback traduit
+    }
+  };
 
   return (
-    <div className="flex items-center justify-center">
-      <div className="h-screen p-6 rounded-lg w-full max-w-lg">
-        <form onSubmit={handleSubmit}>
-          {["nom", "email", "objet", "message"].map((field, index) => (
-            <div key={index} className="mb-4">
-              <label
-                htmlFor={field}
-                className="block text-lg font-medium text-white"
-              >
-                {field === "message"
-                  ? "Message"
-                  : field.charAt(0).toUpperCase() + field.slice(1)}
-                :
-              </label>
-              {field === "message" ? (
-                <textarea
-                  id={field}
-                  rows={5}
-                  placeholder={`Votre ${field}`}
-                  className={inputClass}
-                  value={formData[field]}
-                  onChange={handleChange}
-                  disabled={isSending}
-                />
-              ) : (
-                <input
-                  id={field}
-                  type={field === "email" ? "email" : "text"}
-                  placeholder={`Votre ${field}`}
-                  className={inputClass}
-                  onChange={handleChange}
-                  disabled={isSending}
-                />
-              )}
-            </div>
-          ))}
-          <button
-            type="submit"
-            className="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-800 text-white font-semibold rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-            disabled={isSending}
+    <div className="w-full max-w-lg mx-auto p-6 bg-gray-900 bg-opacity-50 rounded-lg shadow-lg">
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="flex flex-col">
+          <label htmlFor="name" className="text-lg font-medium text-white mb-2">
+            {t("name")}
+          </label>
+          <input
+            id="name"
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full p-3 bg-gray-800 text-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            required
+          />
+        </div>
+        <div className="flex flex-col">
+          <label
+            htmlFor="email"
+            className="text-lg font-medium text-white mb-2"
           >
-            {isSending ? "Envoi en cours..." : "Envoyer"}
-          </button>
-        </form>
-        {responseMessage && (
-          <div
-            className={`mt-4 text-center ${
-              responseType === "success" ? "text-green-500" : "text-red-500"
-            }`}
+            {t("email")}
+          </label>
+          <input
+            id="email"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full p-3 bg-gray-800 text-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            required
+          />
+        </div>
+        <div className="flex flex-col">
+          <label
+            htmlFor="subject"
+            className="text-lg font-medium text-white mb-2"
           >
-            {responseMessage}
-          </div>
-        )}
-      </div>
+            {t("subject")}
+          </label>
+          <input
+            id="subject"
+            type="text"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            className="w-full p-3 bg-gray-800 text-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            required
+          />
+        </div>
+        <div className="flex flex-col">
+          <label
+            htmlFor="message"
+            className="text-lg font-medium text-white mb-2"
+          >
+            {t("message")}
+          </label>
+          <textarea
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className="w-full p-3 bg-gray-800 text-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            rows={5}
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition duration-300"
+        >
+          {t("send")}
+        </button>
+      </form>
+      {response && (
+        <p className="mt-6 text-center text-green-400 font-medium">
+          {response}
+        </p>
+      )}
+      {error && (
+        <p className="mt-6 text-center text-red-400 font-medium">{error}</p>
+      )}
     </div>
   );
 }
