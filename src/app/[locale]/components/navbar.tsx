@@ -1,17 +1,20 @@
 "use client";
-
 import { useState } from "react";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("navigation"); // Traductions pour "navigation"
+  const locale = useLocale(); // Récupère la locale actuelle ("fr" ou "en")
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const t = useTranslations();
+  // Fonction pour construire les liens avec la locale
+  const getLocalizedHref = (path: string) =>
+    `/${locale}${path === "/" ? "" : path}`;
 
   return (
     <nav className="py-4 px-4 md:px-8 lg:px-12">
@@ -36,26 +39,26 @@ export default function Navbar() {
       <ul className="hidden lg:flex justify-end space-x-6 text-xl font-light text-white">
         <li>
           <Link
-            href="/"
+            href={getLocalizedHref("/")}
             className="hover:text-purple-600 transition duration-300"
           >
-            Accueil
+            {t("home")}
           </Link>
         </li>
         <li>
           <Link
-            href="/projects"
+            href={getLocalizedHref("/projects")}
             className="hover:text-purple-600 transition duration-300"
           >
-            Réalisations
+            {t("projects")}
           </Link>
         </li>
         <li>
           <Link
-            href="/contact"
+            href={getLocalizedHref("/contact")}
             className="hover:text-purple-600 transition duration-300"
           >
-            Contact
+            {t("contact")}
           </Link>
         </li>
       </ul>
@@ -78,38 +81,37 @@ export default function Navbar() {
                 />
               </svg>
             </div>
-
             <div className="flex justify-center">
               <p className="text-xl font-extralight text-white opacity-25">
-                Où souhaitez-vous aller ?
+                {t("menu_prompt")}
               </p>
             </div>
             <ul className="space-y-4 text-lg font-light text-white my-4">
               <li>
                 <Link
-                  href="/"
+                  href={getLocalizedHref("/")}
                   className="block hover:text-purple-600 transition duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Accueil
+                  {t("home")}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/projects"
+                  href={getLocalizedHref("/projects")}
                   className="block hover:text-purple-600 transition duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Mes réalisations
+                  {t("projects")}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href={getLocalizedHref("/contact")}
                   className="block hover:text-purple-600 transition duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Contact
+                  {t("contact")}
                 </Link>
               </li>
             </ul>
