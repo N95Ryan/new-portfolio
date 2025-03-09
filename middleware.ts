@@ -3,9 +3,6 @@ import { routing } from './src/i18n/routing';
 
 export default createMiddleware(routing);
 
- 
 export const config = {
-  // Match only internationalized pathnames
-    matcher: ["/", "/(en|fr)/:path*"],
-  // Exclude api, static, image, favicon
+  matcher: ["/", "/(en|fr)/:path*"],
 };

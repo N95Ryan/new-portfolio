@@ -1,12 +1,12 @@
 import "./globals.css";
 import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server"; // Assure-toi que cette fonction est bien importée
+import { getMessages } from "next-intl/server";
 
 interface LayoutProps {
   children: ReactNode;
   params: {
-    locale: string; // Paramètre pour la langue dynamique
+    locale: string;
   };
 }
 
