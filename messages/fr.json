@@ -23,8 +23,8 @@
     "title": "Mes compétences",
     "languages": "Langages",
     "frameworks": "Frameworks / Bibliothèques",
+    "database": "Base de données",  
     "tools": "Outils",
-    "ux_ui": "UX / UI",
     "list": {
       "languages": {
         "html5": "HTML5",
@@ -39,16 +39,16 @@
         "tailwind": "Tailwind CSS",
         "shadcnui": "shadcn/ui"
       },
+      "database": {
+        "postgresql": "PostgreSQL",
+        "supabase": "Supabase",
+        "firebase": "Firebase"
+      },      
       "tools": {
         "git": "Git",
         "docker": "Docker",
         "postman": "Postman",
         "graphql": "GraphQL"
-      },
-      "ux_ui": {
-        "figma": "Figma",
-        "photoshop": "Photoshop",
-        "illustrator": "Illustrator"
       }
     }
   },
@@ -57,41 +57,55 @@
     "button_label": "Lien",
     "list": {
       "0": {
+        "name": "Lift Up !",
+        "description": "Lift Up ! est une application mobile destinée aux adeptes du bodybuilding et du fitness. Son objectif est de simplifier la conversion des poids entre les livres et les kilogrammes.",
+        "technologies": "React Native • Expo",
+        "link": "Lien"
+      },
+
+      "1": {
         "name": "Bumble B",
         "description": "Développée dans le cadre de mon projet de fin d'études, Bumble B est une application mobile permettant de contrôler une petite voiture équipée d’un module ESP32 fourni par l'école.",
         "technologies": "React Native • Expo",
         "link": "Lien"
       },
-      "1": {
+      "2": {
         "name": "Site web de Konbini",
         "description": "J'ai été en charge de la refonte graphique de la page d'accueil du site. J'ai également participé à l'intégration de nouvelles fonctionnalités ainsi qu'à l'optimisation de l'UX.",
         "technologies": "Next • Tailwind • WordPress",
         "link": "Lien"
       },
-      "2": {
+      "3": {
         "name": "HairSwift",
         "description": "Projet réalisé afin d'explorer les capacités de Go. Il permet de gérer efficacement un salon de coiffure, avec des fonctionnalités telles que : planification des rendez-vous, gestion des employés et suivi des services.",
         "technologies": "Next • Tailwind • Go",
         "link": "Lien"
       },
-      "3": {
+      "4": {
         "name": "Bitjutsu",
         "description": "Ce projet a été établi dans le but de m'exercer à l'intégration de tokens dans un projet. Il s'agit d'une application qui permet d'éditer une image via des prompts de texte. Pour cela, j'ai utilisé l'API de Replicate.",
         "technologies": "Next • Tailwind • Replicate",
         "link": "Lien"
       },
-      "4": {
+      "5": {
         "name": "EcoMap",
         "description": "Cette maquette d'application a été réalisée dans le cadre de ma soutenance de fin d'année. L'application permet, via une carte, de consulter une liste d'événements liés à l'écologie.",
         "technologies": "Figma",
         "link": "Lien"
       },
-      "5": {
+      "6": {
         "name": "Calculatrice",
         "description": "Comme son nom l'indique, il s'agit d'une calculatrice réalisée avec React en suivant un tutoriel. Ce projet avait pour intérêt de m'initier à la découverte du framework.",
         "technologies": "React",
         "link": "Lien"
+      },
+      "7": {
+        "name": "Jeu du morpion",
+        "description": "Ce projet est un jeu de Morpion (Tic-Tac-Toe) en ligne, programmé en JavaScript. Deux joueurs s'affrontent en plaçant alternativement des \"X\" et des \"O\" sur une grille de 3x3. L'objectif est d'aligner trois symboles identiques (horizontalement, verticalement ou en diagonale) avant son adversaire.",
+        "technologies": "JavaScript",
+        "link": "Link"
       }
+
     }
   },
   "contact": {

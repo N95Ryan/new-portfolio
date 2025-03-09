@@ -13,16 +13,16 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const tList = useTranslations("projects.list"); // Pour les données des projets
-  const t = useTranslations("projects"); // Pour le label du bouton
-  const projectData = tList.raw(project.id); // Récupère l'objet traduit pour cet ID
+  const tList = useTranslations("projects.list");
+  const t = useTranslations("projects");
+  const projectData = tList.raw(project.id);
 
   return (
     <div className="w-full max-w-xs mx-auto">
       <div className="relative h-40 md:h-48 lg:h-56 group rounded-t-xl overflow-hidden">
         <Image
           src={project.image}
-          alt={projectData.name} // Corrigé "title" en "name" pour correspondre au JSON
+          alt={projectData.name}
           fill
           style={{ objectFit: "cover" }}
           className="transition duration-500 ease-in-out transform group-hover:scale-105"

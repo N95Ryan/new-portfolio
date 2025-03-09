@@ -24,7 +24,7 @@
     "languages": "Languages",
     "frameworks": "Frameworks / Libraries",
     "tools": "Tools",
-    "ux_ui": "UX / UI",
+    "database": "Database",  
     "list": {
       "languages": {
         "html5": "HTML5",
@@ -40,17 +40,18 @@
         "tailwind": "Tailwind CSS",
         "shadcnui": "shadcn/ui"
       },
+   "database": {
+        "postgresql": "PostgreSQL",
+        "supabase": "Supabase",
+        "firebase": "Firebase"
+      },
       "tools": {
         "git": "Git",
         "docker": "Docker",
         "postman": "Postman",
         "graphql": "GraphQL"
-      },
-      "ux_ui": {
-        "figma": "Figma",
-        "photoshop": "Photoshop",
-        "illustrator": "Illustrator"
       }
+  
     }
   },
   "projects": {
@@ -58,41 +59,54 @@
     "button_label": "Link",
     "list": {
       "0": {
+        "name": "Lift Up !",
+        "description": "Lift Up ! is a mobile app designed for bodybuilding and fitness enjoyers. Its goal is to simplify the conversion of weights between pounds and kilograms.",
+        "technologies": "React Native • Expo",
+        "link": "Link"
+      },
+      "1": {
         "name": "Bumble B",
         "description": "Developed as part of my final year project, Bumble B is a mobile application that controls a small car equipped with an ESP32 module provided by the school.",
         "technologies": "React Native • Expo",
         "link": "Link"
       },
-      "1": {
+      "2": {
         "name": "Konbini website",
         "description": "I was responsible for redesigning the homepage of the website. I also contributed to the integration of new features and UX optimization.",
         "technologies": "Next • Tailwind • WordPress",
         "link": "Link"
       },
-      "2": {
+      "3": {
         "name": "HairSwift",
         "description": "A project created to explore Go’s capabilities. It efficiently manages a hair salon with features like appointment scheduling, employee management, and service tracking.",
         "technologies": "Next • Tailwind • Go",
         "link": "Link"
       },
-      "3": {
+      "4": {
         "name": "Bitjutsu",
         "description": "This project was designed to practice token integration. It is an application that allows users to edit an image via text prompts, utilizing the Replicate API.",
         "technologies": "Next • Tailwind • Replicate",
         "link": "Link"
       },
-      "4": {
+      "5": {
         "name": "EcoMap",
         "description": "This app prototype was created for my final year defense. The application uses a map to display a list of ecology-related events.",
         "technologies": "Figma",
         "link": "Link"
       },
-      "5": {
+      "6": {
         "name": "Calculator",
         "description": "As the name suggests, this is a calculator built with React by following a tutorial. The main goal of this project was to familiarize myself with the framework.",
         "technologies": "React",
         "link": "Link"
+      },
+      "7": {
+        "name": "Tic-tac-toe",
+        "description": "This project is an online Tic-Tac-Toe game, programmed in JavaScript. Two players compete by alternately placing “X ‘s and ’O ”s on a 3x3 grid. The goal is to line up three identical symbols (horizontally, vertically or diagonally) before your opponent.",
+        "technologies": "JavaScript",
+        "link": "Link"
       }
+
     }
   },
   "contact": {

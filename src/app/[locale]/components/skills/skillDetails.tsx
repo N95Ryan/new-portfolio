@@ -6,13 +6,13 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiShadcnui,
+  SiPostgresql,
+  SiSupabase,
+  SiFirebase,
   SiGit,
   SiDocker,
   SiPostman,
   SiGraphql,
-  SiAdobephotoshop,
-  SiAdobeillustrator,
-  SiFigma,
 } from "react-icons/si";
 
 function skillsDetails() {
@@ -29,6 +29,11 @@ function skillsDetails() {
     { key: "shadcnui", icon: <SiShadcnui />, color: "#fff" },
   ];
 
+  const database = [
+    { key: "postgresql", icon: <SiPostgresql />, color: "#336791" },
+    { key: "supabase", icon: <SiSupabase />, color: "#3ECF8E" },
+    { key: "firebase", icon: <SiFirebase />, color: "#FFCA28" },
+  ];
   const tools = [
     { key: "git", icon: <SiGit />, color: "#F05032" },
     { key: "docker", icon: <SiDocker />, color: "#2496ED" },
@@ -36,13 +41,7 @@ function skillsDetails() {
     { key: "graphql", icon: <SiGraphql />, color: "#E10098" },
   ];
 
-  const design = [
-    { key: "figma", icon: <SiFigma />, color: "#F24E1E" },
-    { key: "photoshop", icon: <SiAdobephotoshop />, color: "#31A8FF" },
-    { key: "illustrator", icon: <SiAdobeillustrator />, color: "#FF9A00" },
-  ];
-
-  return { languages, frameworks, tools, design };
+  return { languages, frameworks, tools, database };
 }
 
 export default skillsDetails;
