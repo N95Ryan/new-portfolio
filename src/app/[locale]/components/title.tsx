@@ -1,7 +1,11 @@
+"use client";
 import { FadeText } from "./magicui/fadeText";
 import LetterPullUp from "./magicui/letterPullUp";
+import { useTranslations } from "next-intl";
 
 export function Title() {
+  const t = useTranslations("hero");
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <FadeText
@@ -9,7 +13,10 @@ export function Title() {
         direction="down"
         text="Ryan PINA-SILASSE"
       />
-      <LetterPullUp words="Développeur Web & Mobile" delay={0.1} />
+      <LetterPullUp
+        words={t("profession") || "Web & Mobile Developer"}
+        delay={0.1}
+      />
     </div>
   );
 }

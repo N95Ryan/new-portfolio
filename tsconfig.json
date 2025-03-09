@@ -33,8 +33,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "backend/api/send-email.ts"
-  ],
+    "backend/api/send-email.ts", 
+    "next.config.js", 
+    "next-intl.config.js"],
   "exclude": [
     "node_modules"
   ]
