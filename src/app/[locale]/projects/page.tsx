@@ -1,17 +1,21 @@
-import Navbar from "../components/navbar";
+"use client";
+import { useTranslations } from "next-intl";
+import Navbar from "../components/navbar"; // Ajustez le chemin selon votre structure
 import BackgroundAnimation from "../components/backgroundAnimation/backgroundAnimation";
 import Footer from "../components/footer";
 import ProjectCard from "../components/projects/projectCard";
 import { projects } from "../components/projects/projectList";
 
-export default function Page() {
+export default function ProjectsPage() {
+  const t = useTranslations("projects");
+
   return (
     <div id="projects" className="flex flex-col min-h-screen">
       <Navbar />
       <BackgroundAnimation />
       <div className="animate-fade-down animate-once animate-duration-1300 flex-grow">
         <h3 className="text-5xl font-semibold text-indigo-500 text-center">
-          Mes réalisations
+          {t("title")}
         </h3>
         <hr className="my-8 border-t border-indigo-700 w-1/2 mx-auto" />
       </div>

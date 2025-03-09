@@ -2,79 +2,96 @@
   "navigation": {
     "home": "Accueil",
     "projects": "Réalisations",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu_prompt": "Où souhaitez-vous aller ?"
   },
   "hero": {
-    "name": "Ryan PINA-SILASSE",
-    "title": "Développeur Web & Mobile"
+    "profession": "Développeur Web & Mobile"
   },
   "about": {
     "title": "Qui suis-je ?",
     "introduction": "Je me présente :",
-    "details": {
-      "name": "Nom : Ryan PINA-SILASSE",
-      "age": "Âge : 24 ans",
-      "location": "Localisation : Paris, France"
-    },
-    "description": "Depuis mon plus jeune âge, je baigne dans la technologie, une passion qui m’a naturellement conduit vers une carrière dans ce domaine. Aujourd'hui développeur web de profession, mon parcours et ma curiosité m’ont permis de cultiver des compétences techniques, tout en nourrissant ma créativité. J’ai toujours soif d’apprendre et de découvrir de nouvelles façons de faire ou de penser, que ce soit en utilisant des outils tels que React et Next.js ou en élargissant mes horizons avec Golang pour tendre vers un rôle Fullstack. L’innovation est au cœur de mon quotidien. Aujourd’hui, je suis en recherche d’un poste où je pourrais mettre mes compétences au service de projets ambitieux, tout en continuant à apprendre et à innover. Disponible immédiatement, je suis prêt à transformer vos idées en solutions concrètes et impactantes !"
+    "name": "Nom : Ryan PINA-SILASSE",
+    "age": "Âge : 24",
+    "location": "Localisation : Paris, France",
+    "description": "Depuis mon plus jeune âge, je baigne dans la technologie, une passion qui m’a naturellement conduit vers une carrière dans ce domaine. Aujourd’hui développeur web de profession, mon parcours et ma curiosité m’ont permis de cultiver des compétences techniques, tout en nourrissant ma créativité. J’ai toujours soif d’apprendre et de découvrir de nouvelles façons de faire ou de penser, que ce soit en utilisant des outils tels que React et Next.js ou en élargissant mes horizons avec Golang pour tendre vers un rôle Fullstack. L’innovation est au cœur de mon quotidien. Aujourd’hui, je suis en recherche d’un poste où je pourrais mettre mes compétences au service de projets ambitieux, tout en continuant à apprendre et à innover. Disponible immédiatement, je suis prêt à transformer vos idées en solutions concrètes et impactantes !"
   },
   "cta": {
     "open_cv": "Ouvrir mon CV"
   },
-  "socials": {
-    "github": "Github",
-    "linkedin": "LinkedIn",
-    "bluesky": "BlueSky",
-    "vercel": "Vercel",
-    "leetcode": "LeetCode"
-  },
   "skills": {
-    "title": "Mes skills",
+    "title": "Mes compétences",
     "languages": "Langages",
     "frameworks": "Frameworks / Bibliothèques",
     "tools": "Outils",
-    "ux_ui": "UX / UI"
+    "ux_ui": "UX / UI",
+    "list": {
+      "languages": {
+        "html5": "HTML5",
+        "css3": "CSS3",
+        "javascript": "JavaScript",
+        "typescript": "TypeScript"
+      },
+      "frameworks": {
+        "react": "React",
+        "nextjs": "Next.js",
+        "tailwind": "Tailwind",
+        "shadcnui": "shadcn/ui"
+      },
+      "tools": {
+        "git": "Git",
+        "docker": "Docker",
+        "postman": "Postman",
+        "graphql": "GraphQL"
+      },
+      "ux_ui": {
+        "figma": "Figma",
+        "photoshop": "Photoshop",
+        "illustrator": "Illustrator"
+      }
+    }
   },
   "projects": {
     "title": "Mes réalisations",
-    "list": [
-      {
+    "button_label": "Lien",
+    "list": {
+      "0": {
         "name": "Bumble B",
         "description": "Développée dans le cadre de mon projet de fin d'études, Bumble B est une application mobile permettant de contrôler une petite voiture équipée d’un module ESP32 fourni par l'école.",
         "technologies": "React Native • Expo",
         "link": "Lien"
       },
-      {
-        "name": "Konbini",
+      "1": {
+        "name": "Site web de Konbini",
         "description": "J'ai été en charge de la refonte graphique de la page d'accueil du site. J'ai également participé à l'intégration de nouvelles fonctionnalités ainsi qu'à l'optimisation de l'UX.",
         "technologies": "Next • Tailwind • WordPress",
         "link": "Lien"
       },
-      {
+      "2": {
         "name": "HairSwift",
         "description": "Projet réalisé afin d'explorer les capacités de Go. Il permet de gérer efficacement un salon de coiffure, avec des fonctionnalités telles que : planification des rendez-vous, gestion des employés et suivi des services.",
         "technologies": "Next • Tailwind • Go",
         "link": "Lien"
       },
-      {
+      "3": {
         "name": "Bitjutsu",
         "description": "Ce projet a été établi dans le but de m'exercer à l'intégration de tokens dans un projet. Il s'agit d'une application qui permet d'éditer une image via des prompts de texte. Pour cela, j'ai utilisé l'API de Replicate.",
         "technologies": "Next • Tailwind • Replicate",
         "link": "Lien"
       },
-      {
+      "4": {
         "name": "EcoMap",
         "description": "Cette maquette d'application a été réalisée dans le cadre de ma soutenance de fin d'année. L'application permet, via une carte, de consulter une liste d'événements liés à l'écologie.",
         "technologies": "Figma",
         "link": "Lien"
       },
-      {
+      "5": {
         "name": "Calculatrice",
         "description": "Comme son nom l'indique, il s'agit d'une calculatrice réalisée avec React en suivant un tutoriel. Ce projet avait pour intérêt de m'initier à la découverte du framework.",
         "technologies": "React",
         "link": "Lien"
       }
-    ]
+    }
   },
   "contact": {
     "title": "Me contacter",
@@ -84,6 +101,14 @@
       "subject": "Objet",
       "message": "Message",
       "send": "Envoyer"
+    },
+    "messages": {
+      "success": "Email envoyé avec succès !",
+      "error_method_not_allowed": "Méthode non autorisée",
+      "error_json_decode": "Erreur de décodage JSON",
+      "error_payload_conversion": "Erreur lors de la conversion du payload",
+      "error_http_request": "Erreur lors de la création de la requête HTTP",
+      "error_email_send": "Erreur lors de l'envoi de l'email"
     }
   },
   "footer": {

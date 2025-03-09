@@ -1,15 +1,16 @@
 import "./globals.css";
 import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 
 interface LayoutProps {
   children: ReactNode;
+  params: {
+    locale: string;
+  };
 }
 
 export const metadata = {
-  title: "Ryan PINA-SILASSE | Développeur Web & Mobile",
-  description: "Portfolio de Ryan PINA-SILASSE, Développeur Web & Mobile",
   openGraph: {
     title: "Portfolio de Ryan PINA-SILASSE, Développeur Web & Mobile",
     description: "Découvrez mes projets, mes compétences et mon parcours.",
@@ -18,14 +19,17 @@ export const metadata = {
   },
 };
 
-export default async function RootLayout({ children }: LayoutProps) {
-  const locale = await getLocale();
-  const messages = await getMessages();
+export default async function RootLayout({
+  children,
+  params: { locale },
+}: LayoutProps) {
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          {" "}
           {children}
         </NextIntlClientProvider>
       </body>
