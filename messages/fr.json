@@ -30,12 +30,13 @@
         "html5": "HTML5",
         "css3": "CSS3",
         "javascript": "JavaScript",
-        "typescript": "TypeScript"
+        "typescript": "TypeScript",
+        "golang": "Go"
       },
       "frameworks": {
         "react": "React",
         "nextjs": "Next.js",
-        "tailwind": "Tailwind",
+        "tailwind": "Tailwind CSS",
         "shadcnui": "shadcn/ui"
       },
       "tools": {

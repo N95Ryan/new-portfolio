@@ -1,8 +1,7 @@
 import {
-  SiHtml5,
-  SiCss3,
   SiJavascript,
   SiTypescript,
+  SiGo,
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
@@ -18,10 +17,9 @@ import {
 
 function skillsDetails() {
   const languages = [
-    { key: "html5", icon: <SiHtml5 />, color: "#e34c26" },
-    { key: "css3", icon: <SiCss3 />, color: "#2965f1" },
     { key: "javascript", icon: <SiJavascript />, color: "#F7DF1E" },
     { key: "typescript", icon: <SiTypescript />, color: "#007acc" },
+    { key: "golang", icon: <SiGo />, color: "#29BEB0" },
   ];
 
   const frameworks = [
