@@ -10,14 +10,24 @@ interface LayoutProps {
   };
 }
 
-export const metadata = {
-  openGraph: {
-    title: "Portfolio de Ryan PINA-SILASSE, Développeur Web & Mobile",
-    description: "Découvrez mes projets, mes compétences et mon parcours.",
-    url: "https://ryan-pina.dev",
-    type: "website",
-  },
-};
+export async function generateMetadata({ params }: LayoutProps) {
+  const { locale } = params;
+
+  return {
+    openGraph: {
+      title:
+        locale === "fr"
+          ? "Portfolio de Ryan PINA-SILASSE, Développeur Web & Mobile"
+          : "Ryan PINA-SILASSE's Portfolio, Web & Mobile Developer",
+      description:
+        locale === "fr"
+          ? "Découvrez mes projets, mes compétences et mon parcours."
+          : "Discover my projects, skills, and journey.",
+      url: `https://ryan-pina.dev/${locale}`,
+      type: "website",
+    },
+  };
+}
 
 export default async function RootLayout({
   children,
@@ -29,7 +39,6 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages} locale={locale}>
-          {" "}
           {children}
         </NextIntlClientProvider>
       </body>
