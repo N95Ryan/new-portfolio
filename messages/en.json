@@ -24,7 +24,7 @@
     "languages": "Languages",
     "frameworks": "Frameworks / Libraries",
     "tools": "Tools",
-    "ux_ui": "UX / UI",
+    "database": "Database",  
     "list": {
       "languages": {
         "html5": "HTML5",
@@ -40,17 +40,18 @@
         "tailwind": "Tailwind CSS",
         "shadcnui": "shadcn/ui"
       },
+   "database": {
+        "postgresql": "PostgreSQL",
+        "supabase": "Supabase",
+        "firebase": "Firebase"
+      },
       "tools": {
         "git": "Git",
         "docker": "Docker",
         "postman": "Postman",
         "graphql": "GraphQL"
-      },
-      "ux_ui": {
-        "figma": "Figma",
-        "photoshop": "Photoshop",
-        "illustrator": "Illustrator"
       }
+  
     }
   },
   "projects": {

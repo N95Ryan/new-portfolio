@@ -23,8 +23,8 @@
     "title": "Mes compétences",
     "languages": "Langages",
     "frameworks": "Frameworks / Bibliothèques",
+    "database": "Base de données",  
     "tools": "Outils",
-    "ux_ui": "UX / UI",
     "list": {
       "languages": {
         "html5": "HTML5",
@@ -39,16 +39,16 @@
         "tailwind": "Tailwind CSS",
         "shadcnui": "shadcn/ui"
       },
+      "database": {
+        "postgresql": "PostgreSQL",
+        "supabase": "Supabase",
+        "firebase": "Firebase"
+      },      
       "tools": {
         "git": "Git",
         "docker": "Docker",
         "postman": "Postman",
         "graphql": "GraphQL"
-      },
-      "ux_ui": {
-        "figma": "Figma",
-        "photoshop": "Photoshop",
-        "illustrator": "Illustrator"
       }
     }
   },
