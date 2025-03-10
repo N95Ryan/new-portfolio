@@ -2,6 +2,7 @@ import "./globals.css";
 import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import LocaleSwitch from "./components/localeSwitch";
 
 interface LayoutProps {
   children: ReactNode;
@@ -37,10 +38,17 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body>
-        <NextIntlClientProvider messages={messages} locale={locale}>
-          {children}
-        </NextIntlClientProvider>
+      <body className="flex flex-col min-h-screen">
+        <header className="w-full py-2">
+          <div className="max-w-4xl mx-auto px-4 flex justify-center">
+            <LocaleSwitch />
+          </div>
+        </header>
+        <main className="flex-grow">
+          <NextIntlClientProvider messages={messages} locale={locale}>
+            {children}
+          </NextIntlClientProvider>
+        </main>
       </body>
     </html>
   );
