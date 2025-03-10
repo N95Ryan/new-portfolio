@@ -10,7 +10,12 @@ const SocialMedia = () => {
   return (
     <div>
       <div className="flex items-center space-x-4 bg-white rounded px-6 py-4">
-        <a className="icon" href="https://github.com/N95Ryan" target="blank">
+        <a
+          className="icon"
+          href="https://github.com/N95Ryan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <SiGithub
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
             title="Github"
@@ -20,7 +25,9 @@ const SocialMedia = () => {
         <a
           className="icon"
           href="https://www.linkedin.com/in/ryan-pina-silasse/"
-          target="blank"
+          hrefLang="fr"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <SiLinkedin
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
@@ -31,7 +38,8 @@ const SocialMedia = () => {
         <a
           className="icon"
           href="https://bsky.app/profile/n95ryan.bsky.social"
-          target="blank"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <SiBluesky
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
@@ -39,7 +47,12 @@ const SocialMedia = () => {
           />
         </a>
 
-        <a className="icon" href="https://vercel.com/" target="blank">
+        <a
+          className="icon"
+          href="https://vercel.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <SiVercel
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
             title="Vercel"
@@ -49,7 +62,8 @@ const SocialMedia = () => {
         <a
           className="icon"
           href="https://www.malt.fr/profile/ryanpinasilasse"
-          target="blank"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <SiMalt
             className="text-3xl text-black hover:text-gray-600 transition duration-300"

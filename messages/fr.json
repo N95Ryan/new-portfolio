@@ -101,7 +101,7 @@
       },
       "7": {
         "name": "Jeu du morpion",
-        "description": "Ce projet est un jeu de Morpion (Tic-Tac-Toe) en ligne, programmé en JavaScript. Deux joueurs s'affrontent en plaçant alternativement des \"X\" et des \"O\" sur une grille de 3x3. L'objectif est d'aligner trois symboles identiques (horizontalement, verticalement ou en diagonale) avant son adversaire.",
+        "description": "Deux joueurs s'affrontent en plaçant alternativement des \"X\" et des \"O\" sur une grille de 3x3. Le but est d'aligner trois symboles identiques avant son adversaire.",
         "technologies": "JavaScript",
         "link": "Link"
       }
