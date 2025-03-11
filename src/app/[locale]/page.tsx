@@ -5,6 +5,7 @@ import BackgroundAnimation from "./components/backgroundAnimation/backgroundAnim
 import Navbar from "./components/navbar";
 import About from "./components/about/about";
 import Skills from "./components/skills/skills";
+import LocaleSwitch from "./components/localeSwitch";
 import Footer from "./components/footer";
 
 export default async function Homepage() {
