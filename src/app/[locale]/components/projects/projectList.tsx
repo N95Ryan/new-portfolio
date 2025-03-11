@@ -83,7 +83,7 @@ export const projects = [
     title: "Jeu du morpion",
     stack: "JavaScript",
     description:
-      'Ce projet est un jeu de Morpion (Tic-Tac-Toe) en ligne, programmé en JavaScript. Deux joueurs s\'affrontent en plaçant alternativement des "X" et des "O" sur une grille de 3x3. L\'objectif est d\'aligner trois symboles identiques (horizontalement, verticalement ou en diagonale) avant son adversaire.',
+      'Deux joueurs s\'affrontent en plaçant alternativement des "X" et des "O" sur une grille de 3x3. L\'objectif est d\'aligner trois symboles identiques avant son adversaire.',
     image: "/images/Projets/Tic-tac-toe.jpg",
     link: "https://github.com/N95Ryan/Tic-tac-toe",
     bgcolor: "#fff",
