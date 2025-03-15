@@ -26,9 +26,9 @@ export default function AboutInfos() {
           </li>
         </ul>
       </div>
-      <p className="text-white text-base sm:text-lg mb-4 w-full sm:w-auto">
+      <p className="text-white text-base sm:text-lg mb-6 w-full sm:w-auto leading-relaxed tracking-wide">
         {t.raw("description")}
-      </p>
+      </p>{" "}
     </div>
   );
 }

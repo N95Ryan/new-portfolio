@@ -1,15 +1,15 @@
 {
   "navigation": {
-    "home": "Home",
+    "home": "Homepage",
     "projects": "Projects",
     "contact": "Contact",
-    "menu_prompt": "Where would you like to go?"
+    "menu_prompt": "Where would you like to go ?"
   },
   "hero": {
     "profession": "Web & Mobile Developer"
   },
   "about": {
-    "title": "About Me",
+    "title": "Who Am I ?",
     "introduction": "Let me introduce myself :",
     "name": "Name : Ryan PINA-SILASSE",
     "age": "Age : 24",
@@ -20,7 +20,7 @@
     "open_cv": "Open my CV"
   },
   "skills": {
-    "title": "My Skills",
+    "title": "My skills",
     "languages": "Languages",
     "frameworks": "Frameworks / Libraries",
     "tools": "Tools",
@@ -55,7 +55,7 @@
     }
   },
   "projects": {
-    "title": "My Projects",
+    "title": "My projects",
     "button_label": "Link",
     "list": {
       "0": {
