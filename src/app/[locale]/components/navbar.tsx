@@ -5,14 +5,14 @@ import { useTranslations, useLocale } from "next-intl";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const t = useTranslations("navigation"); // Traductions pour "navigation"
-  const locale = useLocale(); // Récupère la locale actuelle ("fr" ou "en")
+  const t = useTranslations("navigation");
+  const locale = useLocale();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Fonction pour construire les liens avec la locale
+  // Traduction des les liens via la locale
   const getLocalizedHref = (path: string) =>
     `/${locale}${path === "/" ? "" : path}`;
 

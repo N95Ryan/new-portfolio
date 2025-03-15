@@ -27,7 +27,7 @@ export function ContactForm() {
       const data = await res.json();
 
       if (res.ok) {
-        setResponse(tMessages("success")); // Traduit localement
+        setResponse(tMessages("success"));
       } else {
         const errorMsg = data.message || "error_email_send";
         const translatedError =
@@ -35,7 +35,7 @@ export function ContactForm() {
         setError(translatedError);
       }
     } catch (err) {
-      setError(tMessages("error_email_send")); // Fallback traduit
+      setError(tMessages("error_email_send"));
     }
   };
 

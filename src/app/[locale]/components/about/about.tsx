@@ -6,11 +6,11 @@ import Link from "next/link";
 import SocialMedia from "../socialMedia";
 
 export default function About() {
-  const t = useTranslations("about"); // Traductions pour "about"
-  const tCta = useTranslations("cta"); // Traductions pour "cta"
-  const locale = useLocale(); // Récupère la locale actuelle ("fr" ou "en")
+  const t = useTranslations("about");
+  const tCta = useTranslations("cta");
+  const locale = useLocale();
 
-  // Détermine le chemin du CV en fonction de la locale
+  // La route vers le CV est déterminée en fonction de la locale
   const cvPath = `/${locale === "fr" ? "CV_fr" : "CV_en"}.pdf`;
 
   return (
@@ -28,7 +28,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center justify-center gap-4">
         <div className="flex justify-center animate-fade-up animate-once animate-duration-[1300ms]">
           <Link
-            href={cvPath} // Chemin dynamique basé sur la locale
+            href={cvPath}
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-4 bg-indigo-600 text-white font-semibold text-lg rounded hover:bg-indigo-800 transition-colors"
