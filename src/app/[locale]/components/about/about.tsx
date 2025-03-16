@@ -4,6 +4,7 @@ import AboutPicture from "./aboutPicture";
 import AboutInfos from "./aboutInfos";
 import Link from "next/link";
 import SocialMedia from "../socialMedia";
+import RSSButton from "../rssButton";
 
 export default function About() {
   const t = useTranslations("about");
@@ -25,8 +26,8 @@ export default function About() {
         <AboutPicture />
         <AboutInfos />
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-        <div className="flex justify-center animate-fade-up animate-once animate-duration-[1300ms]">
+      <div className="flex flex-col items-center justify-center gap-4">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 animate-fade-up animate-once animate-duration-[1300ms]">
           <Link
             href={cvPath}
             target="_blank"
@@ -35,6 +36,7 @@ export default function About() {
           >
             {tCta("open_cv")}
           </Link>
+          <RSSButton />
         </div>
         <div className="flex justify-center animate-fade-up animate-once animate-duration-[1300ms]">
           <SocialMedia />

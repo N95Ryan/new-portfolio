@@ -18,7 +18,9 @@
 
   },
   "cta": {
-    "open_cv": "Ouvrir mon CV"
+    "open_cv": "Ouvrir mon CV",
+    "rss_feed": "Ma veille techno"
+
   },
   "skills": {
     "title": "Mes compétences",
