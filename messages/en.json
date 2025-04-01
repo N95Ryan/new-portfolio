@@ -14,7 +14,7 @@
     "name": "Name : Ryan PINA-SILASSE",
     "age": "Age : 24",
     "location": "Location : Paris, France",
-    "description": "Since my youngest age, I've been immersed in technology, a passion that naturally led me to a career in this domain. Now a professional web developer, my journey and curiosity allowed me to cultivate technical skills while nurturing my creativity. I'm always aiming to learn and discover new ways of doing or thinking, whether by using tools like React and Next.js or broadening my horizons with Golang to move towards a more Fullstack role. Innovation is the heart of my daily life. I am currently looking for a position where I can use my skills to contribute to ambitious projects while continuing to learn and innovate. Available immediately, I am ready to turn your ideas into concrete and impactful solutions !"
+    "description": "Since my youngest age, I've been immersed in technology, a passion that naturally led me to a career in this domain. Now a professional web developer, my journey and curiosity allowed me to cultivate technical skills while nurturing my creativity. I'm always aiming to learn and discover new ways of doing or thinking, whether by using tools like React and Next.js or broadening my horizons with Go to move towards a more fullstack position. Innovation is the heart of my daily life. I am currently looking for a position where I can use my skills to contribute to ambitious projects while continuing to learn and innovate. Available immediately, I am ready to turn your ideas into concrete and impactful solutions !"
   },
   "cta": {
     "open_cv": "Open my CV",
@@ -25,6 +25,7 @@
     "title": "My skills",
     "languages": "Languages",
     "frameworks": "Frameworks / Libraries",
+    "mobile":"Mobile",
     "tools": "Tools",
     "database": "Database",  
     "list": {
@@ -39,8 +40,15 @@
       "frameworks": {
         "react": "React",
         "nextjs": "Next.js",
+        "astro": "Astro",
         "tailwind": "Tailwind CSS",
-        "shadcnui": "shadcn/ui"
+        "nodedotjs": "Node.js",
+        "gin": "Gin"
+
+      },
+      "mobile": {
+        "reactNative": "React Native",
+        "expo":"Expo"
       },
    "database": {
         "postgresql": "PostgreSQL",
@@ -49,9 +57,9 @@
       },
       "tools": {
         "git": "Git",
-        "docker": "Docker",
+        "graphql": "GraphQL",
         "postman": "Postman",
-        "graphql": "GraphQL"
+        "docker": "Docker"
       }
   
     }
@@ -61,9 +69,9 @@
     "button_label": "Link",
     "list": {
       "0": {
-        "name": "Lift Up !",
-        "description": "Lift Up ! is a mobile app designed for bodybuilding and fitness enjoyers. Its goal is to simplify the conversion of weights between pounds and kilograms.",
-        "technologies": "React Native • Expo",
+        "name": "Lift Up",
+        "description": "Lift Up is a mobile application designed for bodybuilding and fitness enthusiasts. Its aim is to optimize your workouts by allowing you to create a personalized program, instantly convert weights and track your BMI.",
+        "technologies": "React Native • Expo • Gin ",
         "link": "Link"
       },
       "1": {

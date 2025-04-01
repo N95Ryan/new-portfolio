@@ -6,7 +6,7 @@ import skillsDetails from "./skillDetails";
 
 export default function Skills() {
   const t = useTranslations("skills");
-  const { languages, frameworks, tools, database } = skillsDetails();
+  const { languages, frameworks, mobile, tools, database } = skillsDetails();
 
   type Skill = {
     key: string;
@@ -50,6 +50,13 @@ export default function Skills() {
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mx-8 lg:mx-[20rem] gap-6">
           {renderSkillCards(frameworks, "frameworks")}
+        </div>
+      </div>
+
+      <div className="my-6 animate-jump-in">
+        <p className="text-white text-3xl text-center my-4">{t("mobile")}</p>
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mx-8 lg:mx-[20rem] gap-6">
+          {renderSkillCards(mobile, "mobile")}
         </div>
       </div>
 
