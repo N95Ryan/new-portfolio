@@ -11,13 +11,10 @@
   "about": {
     "title": "Who Am I ?",
     "introduction": "Let me introduce myself :",
-    "name": "Name : Ryan PINA-SILASSE",
-    "age": "Age : 24",
-    "location": "Location : Paris, France",
-    "description": "Since my youngest age, I've been immersed in technology, a passion that naturally led me to a career in this domain. Now a professional web developer, my journey and curiosity allowed me to cultivate technical skills while nurturing my creativity. I'm always aiming to learn and discover new ways of doing or thinking, whether by using tools like React and Next.js or broadening my horizons with Go to move towards a more fullstack position. Innovation is the heart of my daily life. I am currently looking for a position where I can use my skills to contribute to ambitious projects while continuing to learn and innovate. Available immediately, I am ready to turn your ideas into concrete and impactful solutions !"
+    "description": "🎒 Since I was very young, I've been immersed in technology, a passion that naturally led me to a career in this sector.\n\n💻 Today a web developer by profession, my background and curiosity have enabled me to cultivate technical skills, while nurturing my creativity. Innovation is centralt in my daily life.\n\n🎯 I'm currently looking for new opportunities (Freelance / Long term contract) where I can put my skills to work on ambitious projects, while continuing to learn and innovate. I'm ready to turn your ideas into concrete, impactful solutions !\n\n📍 Based in Paris - Available immediately."
   },
-  "cta": {
-    "open_cv": "Open my CV",
+    "cta": {
+    "open_cv": "Open my resume",
     "rss_feed": "My tech feed"
 
   },
@@ -30,8 +27,6 @@
     "database": "Database",  
     "list": {
       "languages": {
-        "html5": "HTML5",
-        "css3": "CSS3",
         "javascript": "JavaScript",
         "typescript": "TypeScript",
         "golang": "Go"
