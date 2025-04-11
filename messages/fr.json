@@ -14,25 +14,21 @@
     "name": "Nom : Ryan PINA-SILASSE",
     "age": "Âge : 24",
     "location": "Localisation : Paris, France",
-        "description": "Depuis mon plus jeune âge, je baigne dans la technologie, une passion qui m’a naturellement conduit vers une carrière dans ce domaine. Aujourd’hui développeur web de profession, mon parcours et ma curiosité m’ont permis de cultiver des compétences techniques, tout en nourrissant ma créativité. J’ai toujours soif d’apprendre et de découvrir de nouvelles façons de faire ou de penser, que ce soit en utilisant des outils tels que React et Next.js ou en élargissant mes horizons avec Go pour tendre vers un rôle Fullstack. L’innovation est au cœur de mon quotidien. Aujourd’hui, je suis en recherche d’un poste où je pourrais mettre mes compétences au service de projets ambitieux, tout en continuant à apprendre et à innover. Disponible immédiatement, je suis prêt à transformer vos idées en solutions concrètes et impactantes !"
-
+    "description": "🎒 Depuis mon plus jeune âge, je baigne dans la technologie, une passion qui m'a naturellement conduit vers une carrière dans ce domaine.\n\n💻 Aujourd'hui développeur web de profession, mon parcours et ma curiosité m'ont permis de cultiver des compétences techniques, tout en nourrissant ma créativité. L’innovation est au cœur de mon quotidien.\n\n🎯 Actuellement je suis en recherche d'une nouvelle opportunité (freelance / CDI) où mettre mes compétences au service de projets ambitieux, tout en continuant à apprendre et à innover. Je suis prêt à transformer vos idées en solutions concrètes et impactantes !\n\n📍 Basé en région parisienne — Disponible immédiatement"
   },
   "cta": {
     "open_cv": "Ouvrir mon CV",
     "rss_feed": "Ma veille techno"
-
   },
   "skills": {
     "title": "Mes compétences",
     "languages": "Langages",
     "frameworks": "Frameworks / Bibliothèques",
-    "mobile":"Mobile",
+    "mobile": "Mobile",
     "database": "Base de données",  
     "tools": "Outils",
     "list": {
       "languages": {
-        "html5": "HTML5",
-        "css3": "CSS3",
         "javascript": "JavaScript",
         "typescript": "TypeScript",
         "golang": "Go"
@@ -41,13 +37,12 @@
         "react": "React",
         "nextjs": "Next.js",
         "astro": "Astro",
-        "tailwind": "Tailwind CSS",
         "nodedotjs": "Node.js",
         "gin": "Gin"
       },
       "mobile": {
         "reactNative": "React Native",
-        "expo":"Expo"
+        "expo": "Expo"
       },
       "database": {
         "postgresql": "PostgreSQL",
@@ -69,13 +64,12 @@
       "0": {
         "name": "Lift Up",
         "description": "Lift Up est une application mobile destinée aux adeptes du bodybuilding et du fitness. Son objectif est d'optimiser vos séances en vous permettant de créer un programme personnalisé, de convertir instantanément les poids et de suivre votre IMC.",
-        "technologies": "React Native • Expo • Gin ",
+        "technologies": "React Native • Expo • Gin",
         "link": "Lien"
       },
-
       "1": {
         "name": "Bumble B",
-        "description": "Développée dans le cadre de mon projet de fin d'études, Bumble B est une application mobile permettant de contrôler une petite voiture équipée d’un module ESP32 fourni par l'école.",
+        "description": "Développée dans le cadre de mon projet de fin d'études, Bumble B est une application mobile permettant de contrôler une petite voiture équipée d'un module ESP32 fourni par l'école.",
         "technologies": "React Native • Expo",
         "link": "Lien"
       },
@@ -115,7 +109,6 @@
         "technologies": "JavaScript",
         "link": "Link"
       }
-
     }
   },
   "contact": {

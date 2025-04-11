@@ -1,6 +1,10 @@
-import { SiGithub, SiLinkedin, SiBluesky, SiVercel } from "react-icons/si";
-
-import { GiWhiteBook } from "react-icons/gi";
+import {
+  SiGithub,
+  SiLinkedin,
+  SiBluesky,
+  SiVercel,
+  SiMalt,
+} from "react-icons/si";
 
 const SocialMedia = () => {
   return (
@@ -57,13 +61,13 @@ const SocialMedia = () => {
 
         <a
           className="icon"
-          href="https://www.myutaku.com/@Bignayru"
+          href="https://www.malt.fr/profile/ryanpinasilasse"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GiWhiteBook
+          <SiMalt
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
-            title="Myutaku"
+            title="Malt"
           />
         </a>
       </div>

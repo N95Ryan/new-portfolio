@@ -1,4 +1,3 @@
-import { color } from "framer-motion";
 import {
   SiJavascript,
   SiTypescript,
@@ -30,8 +29,8 @@ function SkillsDetails() {
     { key: "react", icon: <SiReact />, color: "#61DAFB" },
     { key: "nextjs", icon: <SiNextdotjs />, color: "#fff" },
     { key: "astro", icon: <SiAstro />, color: "#e93dc9" },
-    // { key: "nodedotjs", icon: <SiNodedotjs />, color: "#539e43" },
-    { key: "gin", icon: <SiGin />, color: "#00acd7" },
+    { key: "nodedotjs", icon: <SiNodedotjs />, color: "#539e43" },
+    // { key: "gin", icon: <SiGin />, color: "#00acd7" },
     // { key: "tailwind", icon: <SiTailwindcss />, color: "#06B6D4" },
   ];
 
