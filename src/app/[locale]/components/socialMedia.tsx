@@ -2,9 +2,12 @@ import {
   SiGithub,
   SiLinkedin,
   SiBluesky,
+  SiFiverr,
   SiVercel,
   SiMalt,
 } from "react-icons/si";
+
+import { TbBrandFiverr } from "react-icons/tb";
 
 const SocialMedia = () => {
   return (
@@ -49,13 +52,13 @@ const SocialMedia = () => {
 
         <a
           className="icon"
-          href="https://vercel.com/"
+          href="https://fr.fiverr.com/n95_ryan"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiVercel
+          <TbBrandFiverr
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
-            title="Vercel"
+            title="Fiverr"
           />
         </a>
 
