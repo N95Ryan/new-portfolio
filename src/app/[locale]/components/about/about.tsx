@@ -4,7 +4,7 @@ import AboutPicture from "./aboutPicture";
 import AboutInfos from "./aboutInfos";
 import Link from "next/link";
 import SocialMedia from "../socialMedia";
-import RSSButton from "../rssButton";
+import DailyDevButton from "../DailyDevButton";
 
 export default function About() {
   const t = useTranslations("about");
@@ -36,7 +36,7 @@ export default function About() {
           >
             {tCta("open_cv")}
           </Link>
-          <RSSButton />
+          <DailyDevButton />
         </div>
         <div className="flex justify-center animate-fade-up animate-once animate-duration-[1300ms]">
           <SocialMedia />
