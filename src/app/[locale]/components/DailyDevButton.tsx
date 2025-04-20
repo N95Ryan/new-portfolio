@@ -1,8 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
-export default function RSSButton() {
+export default function DailyDevButton() {
   const t = useTranslations("cta"); // Utilise la section "cta" des traductions
 
   return (
