@@ -7,19 +7,12 @@ export default function RSSButton() {
 
   return (
     <a
-      href="https://rss.app/feeds/_vaGTzOr1oLvRZgTd.xml"
+      href="https://app.daily.dev/n95ryan"
       target="_blank"
       rel="noopener noreferrer"
       className="px-6 py-4 bg-indigo-600 text-white font-semibold text-lg rounded hover:bg-indigo-800 transition-colors inline-flex items-center"
     >
-      <Image
-        src="https://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg"
-        alt="RSS"
-        width={20}
-        height={20}
-        className="mr-2"
-      />
-      <span>{t("rss_feed")}</span>
+      <span>{t("daily_dev")} 💻</span>
     </a>
   );
 }
