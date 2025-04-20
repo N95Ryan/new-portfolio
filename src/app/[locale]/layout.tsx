@@ -15,6 +15,10 @@ export async function generateMetadata({ params }: LayoutProps) {
   const { locale } = params;
 
   return {
+    title:
+      locale === "fr"
+        ? "Ryan PINA-SILASSE | Développeur Web & Mobile"
+        : "Ryan PINA-SILASSE | Web & Mobile Developer",
     openGraph: {
       title:
         locale === "fr"
@@ -23,7 +27,7 @@ export async function generateMetadata({ params }: LayoutProps) {
       description:
         locale === "fr"
           ? "Découvrez mes projets, mes compétences et mon parcours."
-          : "Discover my projects, skills, and journey.",
+          : "Take a look at my projects, skills, and journey.",
       url: `https://ryan-pina.dev/${locale}`,
       type: "website",
     },
