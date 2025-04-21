@@ -14,7 +14,7 @@
     "name": "Nom : Ryan PINA-SILASSE",
     "age": "Âge : 24",
     "location": "Localisation : Paris, France",
-    "description": "🎒 Depuis mon plus jeune âge, je baigne dans la technologie, une passion qui m'a naturellement conduit vers une carrière dans ce domaine.\n\n💻 Aujourd'hui développeur web de profession, mon parcours et ma curiosité m'ont permis de cultiver des compétences techniques, tout en nourrissant ma créativité. L’innovation est au cœur de mon quotidien.\n\n🎯 Actuellement je suis en recherche d'une nouvelle opportunité (freelance / CDI) où mettre mes compétences au service de projets ambitieux, tout en continuant à apprendre et à innover. Je suis prêt à transformer vos idées en solutions concrètes et impactantes !\n\n📍 Basé en région parisienne — Disponible immédiatement"
+    "description": "🎒 Depuis mon plus jeune âge, je baigne dans la technologie, une passion qui m'a naturellement conduit vers une carrière dans ce domaine.\n\n💻 Aujourd'hui développeur web de profession, mon parcours et ma curiosité m'ont permis de cultiver des compétences techniques, tout en nourrissant ma créativité. L'innovation est au cœur de mon quotidien.\n\n🎯 Actuellement je suis en recherche d'une nouvelle opportunité où mettre mes compétences au service de projets ambitieux, tout en continuant à apprendre et à innover. Je suis prêt à transformer vos idées en solutions concrètes et impactantes !\n\n📍 Basé en région parisienne — Disponible immédiatement"
   },
   "cta": {
     "open_cv": "Ouvrir mon CV",
@@ -126,7 +126,8 @@
       "error_json_decode": "Erreur de décodage JSON",
       "error_payload_conversion": "Erreur lors de la conversion du payload",
       "error_http_request": "Erreur lors de la création de la requête HTTP",
-      "error_email_send": "Erreur lors de l'envoi de l'email"
+      "error_email_send": "Erreur lors de l'envoi de l'email",
+      "backend_non_accessible": "Le serveur backend n'est pas accessible pour le moment. Veuillez réessayer plus tard."
     }
   },
   "footer": {

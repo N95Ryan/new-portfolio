@@ -83,7 +83,7 @@
       },
       "3": {
         "name": "HairSwift",
-        "description": "A project created to explore Go’s capabilities. It efficiently manages a hair salon with features like appointment scheduling, employee management, and service tracking.",
+        "description": "A project created to explore Go's capabilities. It efficiently manages a hair salon with features like appointment scheduling, employee management, and service tracking.",
         "technologies": "Next • Tailwind • Go",
         "link": "Link"
       },
@@ -107,11 +107,10 @@
       },
       "7": {
         "name": "Tic-tac-toe",
-        "description": "Two players compete by alternately placing “X ‘s and ’O ”s on a 3x3 grid. The goal is to line up three identical symbols before your opponent.",
+        "description": "Two players compete by alternately placing 'X's and 'O's on a 3x3 grid. The goal is to line up three identical symbols before your opponent.",
         "technologies": "JavaScript",
         "link": "Link"
       }
-
     }
   },
   "contact": {
@@ -124,12 +123,13 @@
       "send": "Send"
     },
     "messages": {
-      "success": "Email sent successfully!",
+      "success": "Email sent successfully !",
       "error_method_not_allowed": "Method not allowed",
       "error_json_decode": "JSON decoding error",
       "error_payload_conversion": "Error during payload conversion",
       "error_http_request": "Error creating HTTP request",
-      "error_email_send": "Error sending email"
+      "error_email_send": "Error sending email",
+      "backend_non_accessible": "The backend server is not accessible at the moment. Please try again later."
     }
   },
   "footer": {
