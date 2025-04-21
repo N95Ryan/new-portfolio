@@ -3,6 +3,7 @@
     "home": "Homepage",
     "projects": "Projects",
     "contact": "Contact",
+    "price": "Pricing",
     "menu_prompt": "Where would you like to go ?"
   },
   "hero": {
@@ -11,12 +12,11 @@
   "about": {
     "title": "Who Am I ?",
     "introduction": "Let me introduce myself :",
-    "description": "🎒 Since I was very young, I've been immersed in technology, a passion that naturally led me to a career in this sector.\n\n💻 Today a web developer by profession, my background and curiosity have enabled me to cultivate technical skills, while nurturing my creativity. Innovation is centralt in my daily life.\n\n🎯 I'm currently looking for new opportunities (Freelance / Long term contract) where I can put my skills to work on ambitious projects, while continuing to learn and innovate. I'm ready to turn your ideas into concrete, impactful solutions !\n\n📍 Based in Paris - Available immediately."
+"description": "🎒 I've been immersed in technology since I was a kid — a passion that naturally led me to pursue a career in this field.\n\n💻 Today, I'm a professional web developer. My journey, driven by curiosity, has allowed me to build solid technical skills while nurturing my creativity. Innovation is at the core of everything I do.\n\n🎯 I'm currently offering my services as a freelance developer, with a clear goal: to contribute to ambitious projects where my skills can truly make a difference — all while continuing to learn and innovate! I'm ready to turn your ideas into real, impactful solutions.\n\n📍 Based in the Paris area — Available immediately"
   },
-    "cta": {
+  "cta": {
     "open_cv": "Open my resume",
     "daily_dev": "My Daily.dev account"
-
   },
   "skills": {
     "title": "My skills",
@@ -30,7 +30,6 @@
         "javascript": "JavaScript",
         "typescript": "TypeScript",
         "golang": "Go"
-
       },
       "frameworks": {
         "react": "React",
@@ -39,13 +38,12 @@
         "tailwind": "Tailwind CSS",
         "nodedotjs": "Node.js",
         "gin": "Gin"
-
       },
       "mobile": {
         "reactNative": "React Native",
         "expo":"Expo"
       },
-   "database": {
+      "database": {
         "postgresql": "PostgreSQL",
         "supabase": "Supabase",
         "firebase": "Firebase"
@@ -56,7 +54,6 @@
         "postman": "Postman",
         "docker": "Docker"
       }
-  
     }
   },
   "projects": {
@@ -83,7 +80,7 @@
       },
       "3": {
         "name": "HairSwift",
-        "description": "A project created to explore Go’s capabilities. It efficiently manages a hair salon with features like appointment scheduling, employee management, and service tracking.",
+        "description": "A project created to explore Go's capabilities. It efficiently manages a hair salon with features like appointment scheduling, employee management, and service tracking.",
         "technologies": "Next • Tailwind • Go",
         "link": "Link"
       },
@@ -107,11 +104,10 @@
       },
       "7": {
         "name": "Tic-tac-toe",
-        "description": "Two players compete by alternately placing “X ‘s and ’O ”s on a 3x3 grid. The goal is to line up three identical symbols before your opponent.",
+        "description": "Two players compete by alternately placing \"X\"s and \"O\"s on a 3x3 grid. The goal is to line up three identical symbols before your opponent.",
         "technologies": "JavaScript",
         "link": "Link"
       }
-
     }
   },
   "contact": {
@@ -134,5 +130,22 @@
   },
   "footer": {
     "copyright": "©2025 Copyright: Ryan Pina-Silasse"
+  },
+  "price": {
+    "title": "Pricing",
+    "france": {
+      "title": "Daily Rate – France"
+    },
+    "international": {
+      "title": "Daily Rate – International"
+    },
+    "mission_type": "Mission Type",
+    "daily_rate": "Daily Rate (€ excl. tax)",
+    "short_mission": "Short mission (1-7 days)",
+    "standard_mission": "Standard mission (1-3 months)",
+    "long_mission": "Long mission (+3 months)",
+    "urgent_mission": "Emergency / weekend / evening",
+    "contact_text": "To discuss your project or get a custom quote, feel free to contact me.",
+    "contact_button": "Contact me"
   }
 }
