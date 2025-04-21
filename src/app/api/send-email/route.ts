@@ -14,35 +14,68 @@ export async function POST(request: Request) {
       throw new Error('Backend URL not configured');
     }
 
-    // Appel à l'API backend Go
-    console.log('Envoi de la requête à:', `${backendUrl}/api/send-email`);
-    const response = await fetch(`${backendUrl}/api/send-email`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        subject,
-        message
-      }),
-    });
-
-    console.log('Statut de la réponse:', response.status);
-    if (!response.ok) {
-      const errorData = await response.json();
-      console.error('Erreur du backend:', errorData);
-      throw new Error(errorData.message || 'Failed to send email');
+    // Vérification de la disponibilité du backend
+    try {
+      const healthCheck = await fetch(backendUrl);
+      console.log('État du backend:', healthCheck.status);
+      if (!healthCheck.ok) {
+        throw new Error(`Backend non disponible (${healthCheck.status})`);
+      }
+    } catch (healthError) {
+      console.error('Erreur de connexion au backend:', healthError);
+      throw new Error('Backend non accessible');
     }
 
-    const data = await response.json();
-    console.log('Réponse du backend:', data);
-    return NextResponse.json(data);
+    // Appel à l'API backend Go
+    const apiUrl = `${backendUrl}/api/send-email`;
+    console.log('Tentative de connexion à:', apiUrl);
+    
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message
+        }),
+      });
+
+      console.log('Statut de la réponse:', response.status);
+      console.log('Headers de la réponse:', Object.fromEntries(response.headers.entries()));
+      
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('Réponse d\'erreur brute:', errorText);
+        let errorData;
+        try {
+          errorData = JSON.parse(errorText);
+        } catch (e) {
+          errorData = { message: errorText };
+        }
+        console.error('Erreur du backend:', errorData);
+        throw new Error(errorData.message || `Erreur HTTP: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log('Réponse du backend:', data);
+      return NextResponse.json(data);
+    } catch (fetchError: unknown) {
+      console.error('Erreur lors de la requête fetch:', fetchError);
+      const errorMessage = fetchError instanceof Error ? fetchError.message : 'Erreur inconnue';
+      throw new Error(`Erreur de connexion au backend: ${errorMessage}`);
+    }
   } catch (error) {
     console.error('Erreur détaillée:', error);
     return NextResponse.json(
-      { message: error instanceof Error ? error.message : 'Error sending email' },
+      { 
+        message: error instanceof Error ? error.message : 'Error sending email',
+        details: error instanceof Error ? error.stack : undefined
+      },
       { status: 500 }
     );
   }
