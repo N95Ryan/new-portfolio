@@ -4,7 +4,7 @@ export const projects = [
   {
     title: "Spotr",
     image: "/images/Projets/Spotr.jpg",
-    link: "https://github.com/N95Ryan/Lift-Up",
+    link: "https://apps.apple.com/fr/app/spotr-tous-les-spots-photo/id1151859681",
     bgcolor: "#fff",
     textColor: "#000",
     id: "0",
