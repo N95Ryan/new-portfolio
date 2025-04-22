@@ -59,56 +59,49 @@
   "projects": {
     "title": "My projects",
     "button_label": "Link",
-    "list": {
-      "0": {
-        "name": "Lift Up",
-        "description": "Lift Up is a mobile application designed for bodybuilding and fitness enthusiasts. Its aim is to optimize your workouts by allowing you to create a personalized program, instantly convert weights and track your BMI.",
-        "technologies": "React Native • Expo • Gin ",
-        "link": "Link"
-      },
-      "1": {
-        "name": "Bumble B",
-        "description": "Developed as part of my final year project, Bumble B is a mobile application that controls a small car equipped with an ESP32 module provided by the school.",
-        "technologies": "React Native • Expo",
-        "link": "Link"
-      },
-      "2": {
-        "name": "Konbini website",
-        "description": "I was responsible for redesigning the homepage of the website. I also contributed to the integration of new features and UX optimization.",
-        "technologies": "Next • Tailwind • WordPress",
-        "link": "Link"
-      },
-      "3": {
-        "name": "HairSwift",
-        "description": "A project created to explore Go's capabilities. It efficiently manages a hair salon with features like appointment scheduling, employee management, and service tracking.",
-        "technologies": "Next • Tailwind • Go",
-        "link": "Link"
-      },
-      "4": {
-        "name": "Bitjutsu",
-        "description": "This project was designed to practice token integration. It is an application that allows users to edit an image via text prompts, utilizing the Replicate API.",
-        "technologies": "Next • Tailwind • Replicate",
-        "link": "Link"
-      },
-      "5": {
-        "name": "EcoMap",
-        "description": "This app prototype was created for my final year defense. The application uses a map to display a list of ecology-related events.",
-        "technologies": "Figma",
-        "link": "Link"
-      },
-      "6": {
-        "name": "Calculator",
-        "description": "As the name suggests, this is a calculator built with React by following a tutorial. The main goal of this project was to familiarize myself with the framework.",
-        "technologies": "React",
-        "link": "Link"
-      },
-      "7": {
-        "name": "Tic-tac-toe",
-        "description": "Two players compete by alternately placing \"X\"s and \"O\"s on a 3x3 grid. The goal is to line up three identical symbols before your opponent.",
-        "technologies": "JavaScript",
-        "link": "Link"
-      }
-    }
+"list": {
+  "0": {
+    "name": "Spotr",
+    "description": "Spotr is a mobile application designed for photographers in search of unique locations. It allows users to easily scout, save, and explore photo spots around the world.",
+    "technologies": "Swift • GraphQL • Firebase",
+    "link": "Link"
+  },
+
+  "1": {
+    "name": "Lift Up",
+    "description": "Lift Up is a mobile application aimed at bodybuilding and fitness enthusiasts. Its goal is to optimize workouts by enabling users to create personalized programs, instantly convert weights, and track their BMI.",
+    "technologies": "React Native • Expo • Go",
+    "link": "Link"
+  },
+
+  "2": {
+    "name": "Bumble B",
+    "description": "Developed as part of my final school project, Bumble B is a mobile application that controls a small car equipped with an ESP32 module provided by the school.",
+    "technologies": "React Native • Expo • Java",
+    "link": "Link"
+  },
+
+  "3": {
+    "name": "Konbini Website",
+    "description": "I was responsible for the homepage redesign. I also contributed to the integration of new features and to the optimization of the user experience.",
+    "technologies": "Next • GraphQL • WordPress",
+    "link": "Link"
+  },
+
+  "4": {
+    "name": "HairSwift",
+    "description": "A project built to explore the capabilities of Go. It enables efficient management of a hair salon, with features like appointment scheduling, staff management, and service tracking.",
+    "technologies": "Astro • Tailwind • Go",
+    "link": "Link"
+  },
+
+  "5": {
+    "name": "Bitjutsu",
+    "description": "This project was created to practice token integration in a real-world application. It is an app that allows users to edit images via text prompts using the Replicate API.",
+    "technologies": "Next • Tailwind • Replicate",
+    "link": "Link"
+  }
+}
   },
   "contact": {
     "title": "Contact Me",
