@@ -113,7 +113,7 @@
       "send": "Send"
     },
     "messages": {
-      "success": "Email sent successfully!",
+      "success": "Email sent successfully !",
       "error_method_not_allowed": "Method not allowed",
       "error_json_decode": "JSON decoding error",
       "error_payload_conversion": "Error during payload conversion",

@@ -3,7 +3,6 @@ import ProjectCard from "./projectCard";
 export const projects = [
   {
     title: "Spotr",
-    stack: "React",
     image: "/images/Projets/Spotr.jpg",
     link: "https://github.com/N95Ryan/Lift-Up",
     bgcolor: "#fff",
@@ -13,7 +12,6 @@ export const projects = [
 
   {
     title: "Lift Up !",
-    stack: "React",
     image: "/images/Projets/Lift-Up.jpg",
     link: "https://github.com/N95Ryan/Lift-Up",
     bgcolor: "#fff",
@@ -23,7 +21,6 @@ export const projects = [
 
   {
     title: "Bumble B",
-    stack: "React Native • Expo",
     image: "/images/Projets/Bumble-B.jpg",
     link: "https://github.com/N95Ryan/Bumble-B",
     bgcolor: "#322c2b",
@@ -32,7 +29,6 @@ export const projects = [
   },
   {
     title: "Konbini",
-    stack: "Next • Tailwind • WordPress",
     image: "/images/Projets/Konbini.jpg",
     link: "https://www.konbini.com/",
     bgcolor: "#b91c1c",
@@ -41,7 +37,6 @@ export const projects = [
   },
   {
     title: "HairSwift",
-    stack: "Next • Tailwind • Go",
     image: "/images/Projets/HairSwift.jpg",
     link: "https://github.com/N95Ryan/HairSwift",
     bgcolor: "#ffffff",
@@ -50,7 +45,6 @@ export const projects = [
   },
   {
     title: "Bitjutsu",
-    stack: "Next • Tailwind • Replicate",
     image: "/images/Projets/Bitjutsu.jpg",
     link: "https://bijutsu-n95ryan.vercel.app/",
     bgcolor: "#fff",

@@ -16,7 +16,7 @@ export async function POST(request: Request) {
 
     // Vérification de la disponibilité du backend
     try {
-      const healthCheck = await fetch(backendUrl);
+      const healthCheck = await fetch(`${backendUrl}/health`);
       console.log('État du backend:', healthCheck.status);
       if (!healthCheck.ok) {
         throw new Error(`Backend non disponible (${healthCheck.status})`);
@@ -28,6 +28,7 @@ export async function POST(request: Request) {
 
     // Appel à l'API backend Go
     const apiUrl = `${backendUrl}/api/send-email`;
+    
     console.log('Tentative de connexion à:', apiUrl);
     
     try {
