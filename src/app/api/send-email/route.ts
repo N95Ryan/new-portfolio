@@ -16,26 +16,10 @@ export async function POST(request: Request) {
 
     // Vérification de la disponibilité du backend
     try {
-      console.log('Tentative de connexion au backend pour vérification...');
-      const healthCheck = await fetch(backendUrl, {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json',
-        },
-      });
+      const healthCheck = await fetch(`${backendUrl}/health`);
       console.log('État du backend:', healthCheck.status);
-      console.log('Headers de la réponse du backend:', Object.fromEntries(healthCheck.headers.entries()));
-      
       if (!healthCheck.ok) {
         throw new Error(`Backend non disponible (${healthCheck.status})`);
-      }
-      
-      // Essayer de lire le corps de la réponse
-      try {
-        const healthData = await healthCheck.text();
-        console.log('Réponse du backend (texte):', healthData);
-      } catch (e) {
-        console.log('Impossible de lire le corps de la réponse du backend');
       }
     } catch (healthError) {
       console.error('Erreur de connexion au backend:', healthError);
@@ -44,24 +28,22 @@ export async function POST(request: Request) {
 
     // Appel à l'API backend Go
     const apiUrl = `${backendUrl}/api/send-email`;
+    
     console.log('Tentative de connexion à:', apiUrl);
     
     try {
-      const requestBody = JSON.stringify({
-        name,
-        email,
-        subject,
-        message
-      });
-      console.log('Corps de la requête:', requestBody);
-      
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
         },
-        body: requestBody,
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message
+        }),
       });
 
       console.log('Statut de la réponse:', response.status);
