@@ -3,6 +3,7 @@
     "home": "Accueil",
     "projects": "Réalisations",
     "contact": "Contact",
+    "price": "Tarifs",
     "menu_prompt": "Où souhaitez-vous aller ?"
   },
   "hero": {
@@ -14,7 +15,7 @@
     "name": "Nom : Ryan PINA-SILASSE",
     "age": "Âge : 24",
     "location": "Localisation : Paris, France",
-    "description": "🎒 Depuis mon plus jeune âge, je baigne dans la technologie, une passion qui m'a naturellement conduit vers une carrière dans ce domaine.\n\n💻 Aujourd'hui développeur web de profession, mon parcours et ma curiosité m'ont permis de cultiver des compétences techniques, tout en nourrissant ma créativité. L’innovation est au cœur de mon quotidien.\n\n🎯 Actuellement je suis en recherche d'une nouvelle opportunité (freelance / CDI) où mettre mes compétences au service de projets ambitieux, tout en continuant à apprendre et à innover. Je suis prêt à transformer vos idées en solutions concrètes et impactantes !\n\n📍 Basé en région parisienne — Disponible immédiatement"
+    "description": "🎒 Depuis mon plus jeune âge, je baigne dans la technologie, une passion qui m'a naturellement conduit vers une carrière dans ce domaine.\n\n💻 Aujourd'hui développeur web de profession, mon parcours et ma curiosité m'ont permis de cultiver des compétences techniques, tout en nourrissant ma créativité. L'innovation est au cœur de mon quotidien.\n\n🎯 Actuellement je propose mes services en tant que freelance avec une envie claire : contribuer à des projets ambitieux, où mes compétences feront la différence, tout en continuant à apprendre et à innover ! Je suis prêt à transformer vos idées en solutions concrètes et impactantes !\n\n📍 Basé en région parisienne — Disponible immédiatement"
   },
   "cta": {
     "open_cv": "Ouvrir mon CV",
@@ -62,52 +63,41 @@
     "button_label": "Lien",
     "list": {
       "0": {
-        "name": "Lift Up",
-        "description": "Lift Up est une application mobile destinée aux adeptes du bodybuilding et du fitness. Son objectif est d'optimiser vos séances en vous permettant de créer un programme personnalisé, de convertir instantanément les poids et de suivre votre IMC.",
-        "technologies": "React Native • Expo • Gin",
+        "name": "Spotr",
+        "description": "Spotr est une application mobile conçue pour les photographes à la recherche de lieux uniques. Elle permet de repérer, sauvegarder et explorer facilement des spots photo partout dans le monde.",
+        "technologies": "Swift • GraphQL • Firebase",
         "link": "Lien"
       },
+
       "1": {
-        "name": "Bumble B",
-        "description": "Développée dans le cadre de mon projet de fin d'études, Bumble B est une application mobile permettant de contrôler une petite voiture équipée d'un module ESP32 fourni par l'école.",
-        "technologies": "React Native • Expo",
+        "name": "Lift Up",
+        "description": "Lift Up est une application mobile destinée aux adeptes du bodybuilding et du fitness. Son objectif est d'optimiser vos séances en vous permettant de créer un programme personnalisé, de convertir instantanément les poids et de suivre votre IMC.",
+        "technologies": "React Native • Expo • Go",
         "link": "Lien"
       },
       "2": {
-        "name": "Site web de Konbini",
-        "description": "J'ai été en charge de la refonte graphique de la page d'accueil du site. J'ai également participé à l'intégration de nouvelles fonctionnalités ainsi qu'à l'optimisation de l'UX.",
-        "technologies": "Next • Tailwind • WordPress",
+        "name": "Bumble B",
+        "description": "Développée dans le cadre de mon projet de fin d'études, Bumble B est une application mobile permettant de contrôler une petite voiture équipée d'un module ESP32 fourni par l'école.",
+        "technologies": "React Native • Expo • Java",
         "link": "Lien"
       },
       "3": {
-        "name": "HairSwift",
-        "description": "Projet réalisé afin d'explorer les capacités de Go. Il permet de gérer efficacement un salon de coiffure, avec des fonctionnalités telles que : planification des rendez-vous, gestion des employés et suivi des services.",
-        "technologies": "Next • Tailwind • Go",
+        "name": "Site web de Konbini",
+        "description": "J'ai été en charge de la refonte graphique de la page d'accueil du site. J'ai également participé à l'intégration de nouvelles fonctionnalités ainsi qu'à l'optimisation de l'UX.",
+        "technologies": "Next • GraphQL • WordPress",
         "link": "Lien"
       },
       "4": {
+        "name": "HairSwift",
+        "description": "Projet réalisé afin d'explorer les capacités de Go. Il permet de gérer efficacement un salon de coiffure, avec des fonctionnalités telles que : planification des rendez-vous, gestion des employés et suivi des services.",
+        "technologies": "Astro • Tailwind • Go",
+        "link": "Lien"
+      },
+      "5": {
         "name": "Bitjutsu",
         "description": "Ce projet a été établi dans le but de m'exercer à l'intégration de tokens dans un projet. Il s'agit d'une application qui permet d'éditer une image via des prompts de texte. Pour cela, j'ai utilisé l'API de Replicate.",
         "technologies": "Next • Tailwind • Replicate",
         "link": "Lien"
-      },
-      "5": {
-        "name": "EcoMap",
-        "description": "Cette maquette d'application a été réalisée dans le cadre de ma soutenance de fin d'année. L'application permet, via une carte, de consulter une liste d'événements liés à l'écologie.",
-        "technologies": "Figma",
-        "link": "Lien"
-      },
-      "6": {
-        "name": "Calculatrice",
-        "description": "Comme son nom l'indique, il s'agit d'une calculatrice réalisée avec React en suivant un tutoriel. Ce projet avait pour intérêt de m'initier à la découverte du framework.",
-        "technologies": "React",
-        "link": "Lien"
-      },
-      "7": {
-        "name": "Jeu du morpion",
-        "description": "Deux joueurs s'affrontent en plaçant alternativement des \"X\" et des \"O\" sur une grille de 3x3. Le but est d'aligner trois symboles identiques avant son adversaire.",
-        "technologies": "JavaScript",
-        "link": "Link"
       }
     }
   },
@@ -131,5 +121,22 @@
   },
   "footer": {
     "copyright": "©2025 Copyright : Ryan Pina-Silasse"
+  },
+  "price": {
+    "title": "Tarifs",
+    "france": {
+      "title": "TJM – France"
+    },
+    "international": {
+      "title": "TJM – International"
+    },
+    "mission_type": "Type de mission",
+    "daily_rate": "TJM (€ HT)",
+    "short_mission": "Mission courte (1-7 jours)",
+    "standard_mission": "Mission standard (1-3 mois)",
+    "long_mission": "Mission longue (+3 mois)",
+    "urgent_mission": "Urgence / week-end / soir",
+    "contact_text": "Pour discuter de votre projet ou obtenir un devis personnalisé, n'hésitez pas à me contacter.",
+    "contact_button": "Me contacter"
   }
 }

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
+import { getLocalizedHref } from "../utils/locale";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,10 +12,6 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  // Traduction des les liens via la locale
-  const getLocalizedHref = (path: string) =>
-    `/${locale}${path === "/" ? "" : path}`;
 
   return (
     <nav className="py-4 px-4 md:px-8 lg:px-12">
@@ -39,7 +36,7 @@ export default function Navbar() {
       <ul className="hidden lg:flex justify-end space-x-6 text-xl font-light text-white">
         <li>
           <Link
-            href={getLocalizedHref("/")}
+            href={getLocalizedHref("/", locale)}
             className="hover:text-purple-600 transition duration-300"
           >
             {t("home")}
@@ -47,7 +44,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href={getLocalizedHref("/projects")}
+            href={getLocalizedHref("/projects", locale)}
             className="hover:text-purple-600 transition duration-300"
           >
             {t("projects")}
@@ -55,7 +52,15 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href={getLocalizedHref("/contact")}
+            href={getLocalizedHref("/price", locale)}
+            className="hover:text-purple-600 transition duration-300"
+          >
+            {t("price")}
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={getLocalizedHref("/contact", locale)}
             className="hover:text-purple-600 transition duration-300"
           >
             {t("contact")}
@@ -89,7 +94,7 @@ export default function Navbar() {
             <ul className="space-y-4 text-lg font-light text-white my-4">
               <li>
                 <Link
-                  href={getLocalizedHref("/")}
+                  href={getLocalizedHref("/", locale)}
                   className="block hover:text-purple-600 transition duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -98,7 +103,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href={getLocalizedHref("/projects")}
+                  href={getLocalizedHref("/projects", locale)}
                   className="block hover:text-purple-600 transition duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -107,7 +112,16 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href={getLocalizedHref("/contact")}
+                  href={getLocalizedHref("/price", locale)}
+                  className="block hover:text-purple-600 transition duration-300"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {t("price")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={getLocalizedHref("/contact", locale)}
                   className="block hover:text-purple-600 transition duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
