@@ -4,7 +4,7 @@ import AboutPicture from "./aboutPicture";
 import AboutInfos from "./aboutInfos";
 import Link from "next/link";
 import SocialMedia from "../socialMedia";
-import DailyDevButton from "../DailyDevButton";
+import DailyDevButton from "../CodeByNayruButton";
 
 export default function About() {
   const t = useTranslations("about");

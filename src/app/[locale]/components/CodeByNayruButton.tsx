@@ -1,17 +1,14 @@
 "use client";
-import { useTranslations } from "next-intl";
 
-export default function DailyDevButton() {
-  const t = useTranslations("cta"); // Utilise la section "cta" des traductions
-
+export default function CodeByNayruButton() {
   return (
     <a
-      href="https://app.daily.dev/n95ryan"
+      href="https://codebynayru.com/"
       target="_blank"
       rel="noopener noreferrer"
       className="px-6 py-4 bg-indigo-600 text-white font-semibold text-lg rounded hover:bg-indigo-800 transition-colors inline-flex items-center"
     >
-      <span>{t("daily_dev")} 💻</span>
+      <p>Code by Nayru 💻</p>
     </a>
   );
 }

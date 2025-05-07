@@ -2,7 +2,7 @@ import {
   SiGithub,
   SiLinkedin,
   SiBluesky,
-  SiFiverr,
+  SiInstagram,
   SiVercel,
   SiMalt,
   SiInstagram,

@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: LayoutProps) {
   return {
     title:
       locale === "fr"
-        ? "Ryan PINA-SILASSE | Développeur Web & Mobile"
-        : "Ryan PINA-SILASSE | Web & Mobile Developer",
+        ? "Ryan PINA-SILASSE • Développeur Web & Mobile"
+        : "Ryan PINA-SILASSE • Web & Mobile Developer",
     description:
       locale === "fr"
         ? "Développeur web et mobile passionné, spécialisé en développement d'applications modernes."
@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: LayoutProps) {
     openGraph: {
       title:
         locale === "fr"
-          ? "Portfolio de Ryan PINA-SILASSE, Développeur Web & Mobile"
-          : "Ryan PINA-SILASSE's Portfolio, Web & Mobile Developer",
+          ? "Ryan PINA-SILASSE • Développeur Web & Mobile"
+          : "Ryan PINA-SILASSE • Web & Mobile Developer",
       description:
         locale === "fr"
           ? "Découvrez mes projets, mes compétences et mon parcours."

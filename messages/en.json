@@ -3,7 +3,6 @@
     "home": "Homepage",
     "projects": "Projects",
     "contact": "Contact",
-    "price": "Pricing",
     "menu_prompt": "Where would you like to go ?"
   },
   "hero": {
@@ -123,22 +122,5 @@
   },
   "footer": {
     "copyright": "©2025 Copyright: Ryan Pina-Silasse"
-  },
-  "price": {
-    "title": "Pricing",
-    "france": {
-      "title": "Daily Rate – France"
-    },
-    "international": {
-      "title": "Daily Rate – International"
-    },
-    "mission_type": "Mission Type",
-    "daily_rate": "Daily Rate (€ excl. tax)",
-    "short_mission": "Short mission (1-7 days)",
-    "standard_mission": "Standard mission (1-3 months)",
-    "long_mission": "Long mission (+3 months)",
-    "urgent_mission": "Emergency / weekend / evening",
-    "contact_text": "To discuss your project or get a custom quote, feel free to contact me.",
-    "contact_button": "Contact me"
   }
 }

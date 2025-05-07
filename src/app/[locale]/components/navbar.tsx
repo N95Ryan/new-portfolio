@@ -52,14 +52,6 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href={getLocalizedHref("/price", locale)}
-            className="hover:text-purple-600 transition duration-300"
-          >
-            {t("price")}
-          </Link>
-        </li>
-        <li>
-          <Link
             href={getLocalizedHref("/contact", locale)}
             className="hover:text-purple-600 transition duration-300"
           >
@@ -108,15 +100,6 @@ export default function Navbar() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {t("projects")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={getLocalizedHref("/price", locale)}
-                  className="block hover:text-purple-600 transition duration-300"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {t("price")}
                 </Link>
               </li>
               <li>
