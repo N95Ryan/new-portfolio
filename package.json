@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-dev": "vercel dev"
+    "vercel-dev": "vercel dev",
+    "generate-icons": "node scripts/generate-icons.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",

@@ -3,11 +3,8 @@ import {
   SiLinkedin,
   SiBluesky,
   SiInstagram,
-  SiVercel,
   SiMalt,
 } from "react-icons/si";
-
-import { TbBrandFiverr } from "react-icons/tb";
 
 const SocialMedia = () => {
   return (
