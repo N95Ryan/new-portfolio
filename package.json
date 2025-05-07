@@ -10,7 +10,6 @@
     "vercel-dev": "vercel dev"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
@@ -23,15 +22,11 @@
     "classnames": "^2.5.1",
     "dotenv": "^16.4.5",
     "http-proxy-middleware": "^3.0.0",
-    "i": "^0.3.7",
     "lineicons-react": "^1.0.5",
-    "nest-mailjet": "^0.3.0",
     "next": "^14.2.26",
     "next-intl": "^3.26.5",
     "next-themes": "^0.3.0",
     "nodemailer": "^6.10.1",
-    "npm": "^11.1.0",
-    "proxy-middleware": "^0.15.0",
     "react": "18",
     "react-dom": "18",
     "react-google-recaptcha": "^3.1.0",
@@ -40,7 +35,6 @@
     "react-icons": "^5.2.1",
     "sharp": "^0.33.5",
     "styled-components": "^6.1.11",
-    "tree-cli": "^0.6.7",
     "vercel": "^39.0.5"
   },
   "devDependencies": {
