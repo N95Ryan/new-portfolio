@@ -6,7 +6,12 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['ryan-pina.dev'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ryan-pina.dev',
+      },
+    ],
   },
   async headers() {
     return [

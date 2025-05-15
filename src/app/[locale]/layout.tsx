@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: LayoutProps) {
         : "Passionate web and mobile developer, specialized in modern application development.",
     keywords:
       locale === "fr"
-        ? "Fullstack, Freelance, Remote, React, Next.js, TypeScript, Go, Golang, Supabase, Vercel, Astro, Gin, Développement d'applications mobiles, Création de site web sur mesure, scalable, PWA, MVP, site vitrine, développeur web, développeur mobile, JavaScript, portfolio, frontend, backend"
-        : "Fullstack, Freelance, Remote, React, Next.js, TypeScript, Go, Golang, Supabase, Vercel, Astro, Gin, Mobile application development, Custom web development, scalable, PWA, MVP, landing page, web developer, mobile developer, JavaScript, portfolio, frontend, backend",
+        ? "Fullstack, Freelance, Remote, React, Next.js, TypeScript, Go, Golang, Supabase, Vercel, Astro, Gin, Développement d'applications mobiles, Création de site web sur mesure, scalable, PWA, MVP, site vitrine, développeur web, développeur mobile, JavaScript, portfolio, frontend, backend, Node.js, Express, Supabase, Vercel"
+        : "Fullstack, Freelance, Remote, React, Next.js, TypeScript, Go, Golang, Supabase, Vercel, Astro, Gin, Mobile application development, Custom web development, scalable, PWA, MVP, landing page, web developer, mobile developer, JavaScript, portfolio, frontend, backend, Node.js, Express, Supabase, Vercel",
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "any" },

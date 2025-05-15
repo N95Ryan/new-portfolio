@@ -1,7 +1,7 @@
 {
   "navigation": {
     "home": "Accueil",
-    "projects": "Réalisations",
+    "projects": "Projets",
     "contact": "Contact",
     "menu_prompt": "Où souhaitez-vous aller ?"
   },
@@ -18,7 +18,7 @@
   },
   "cta": {
     "open_cv": "Ouvrir mon CV",
-    "daily_dev": "Mon profil Daily.dev"
+    "mail_contact": "Me contacter"
   },
   "skills": {
     "title": "Mes compétences",

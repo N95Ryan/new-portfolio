@@ -4,12 +4,18 @@ import AboutPicture from "./aboutPicture";
 import AboutInfos from "./aboutInfos";
 import Link from "next/link";
 import SocialMedia from "../socialMedia";
-import DailyDevButton from "../CodeByNayruButton";
+import CodeByNayruButton from "../CodeByNayruButton";
+import { useEffect, useState } from "react";
 
 export default function About() {
   const t = useTranslations("about");
   const tCta = useTranslations("cta");
   const locale = useLocale();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // La route vers le CV est déterminée en fonction de la locale
   const cvPath = `/${locale === "fr" ? "CV_fr" : "CV_en"}.pdf`;
@@ -36,7 +42,13 @@ export default function About() {
           >
             {tCta("open_cv")}
           </Link>
-          <DailyDevButton />
+          <Link
+            href="mailto:n95jsryan@gmail.com"
+            className="px-6 py-4 bg-indigo-600 text-white font-semibold text-lg rounded hover:bg-indigo-800 transition-colors"
+          >
+            {tCta("mail_contact")}
+          </Link>
+          <CodeByNayruButton />
         </div>
         <div className="flex justify-center animate-fade-up animate-once animate-duration-[1300ms]">
           <SocialMedia />
