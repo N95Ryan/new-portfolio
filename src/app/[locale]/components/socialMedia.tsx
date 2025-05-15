@@ -2,13 +2,10 @@ import {
   SiGithub,
   SiLinkedin,
   SiBluesky,
-  SiInstagram,
-  SiVercel,
+  SiBento,
   SiMalt,
   SiInstagram,
 } from "react-icons/si";
-
-import { TbBrandFiverr } from "react-icons/tb";
 
 const SocialMedia = () => {
   return (
@@ -53,13 +50,13 @@ const SocialMedia = () => {
 
         <a
           className="icon"
-          href="https://www.instagram.com/code.by.nayru/"
+          href="https://bento.me/n95ryan"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiInstagram
+          <SiBento
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
-            title="Instagram"
+            title="Bento"
           />
         </a>
 
