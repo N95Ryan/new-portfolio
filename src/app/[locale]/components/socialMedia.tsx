@@ -4,7 +4,6 @@ import {
   SiBluesky,
   SiBento,
   SiMalt,
-  SiInstagram,
 } from "react-icons/si";
 
 const SocialMedia = () => {
