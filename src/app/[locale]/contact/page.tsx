@@ -4,17 +4,12 @@ import Navbar from "../components/navbar";
 import BackgroundAnimation from "../components/backgroundAnimation/backgroundAnimation";
 import { ContactForm } from "../components/contactForm";
 import Footer from "../components/footer";
-import Script from "next/script";
 
 export default function ContactPage() {
   const t = useTranslations("contact");
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Script
-        src="https://www.google.com/recaptcha/enterprise.js?render=6Leimo0qAAAAAGcrSJs7jVAg3d2ucc8xLqN4bziE"
-        async
-      />
       <Navbar />
       <BackgroundAnimation />
       <main className="flex-grow">
