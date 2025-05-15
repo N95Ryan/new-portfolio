@@ -2,7 +2,7 @@ import {
   SiGithub,
   SiLinkedin,
   SiBluesky,
-  SiInstagram,
+  SiBento,
   SiMalt,
 } from "react-icons/si";
 
@@ -49,13 +49,13 @@ const SocialMedia = () => {
 
         <a
           className="icon"
-          href="https://www.instagram.com/code.by.nayru/"
+          href="https://bento.me/n95ryan"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiInstagram
+          <SiBento
             className="text-3xl text-black hover:text-gray-600 transition duration-300"
-            title="Instagram"
+            title="Bento"
           />
         </a>
 
