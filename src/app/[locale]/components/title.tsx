@@ -11,7 +11,7 @@ export function Title() {
       <FadeText
         className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600 my-auto"
         direction="down"
-        text="Hervé PINA-SILASSE"
+        text="Ryan PINA-SILASSE"
       />
       <LetterPullUp
         words={t("profession") || "Web & Mobile Developer"}
