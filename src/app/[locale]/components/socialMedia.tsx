@@ -49,7 +49,7 @@ const SocialMedia = () => {
 
         <a
           className="icon"
-          href="https://bento.me/n95ryan"
+          href="https://bento.me/nayru"
           target="_blank"
           rel="noopener noreferrer"
         >
