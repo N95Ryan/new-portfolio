@@ -11,11 +11,10 @@ import {
   SiExpo,
   SiPostgresql,
   SiSupabase,
-  SiFirebase,
-  SiGit,
   SiDocker,
   SiPostman,
   SiGraphql,
+  SiVercel,
 } from "react-icons/si";
 
 function SkillsDetails() {
@@ -42,11 +41,10 @@ function SkillsDetails() {
   const database = [
     { key: "postgresql", icon: <SiPostgresql />, color: "#336791" },
     { key: "supabase", icon: <SiSupabase />, color: "#3ECF8E" },
-    // { key: "firebase", icon: <SiFirebase />, color: "#FFCA28" },
   ];
   const tools = [
     { key: "graphql", icon: <SiGraphql />, color: "#E10098" },
-    // { key: "git", icon: <SiGit />, color: "#F05032" },
+    { key: "vercel", icon: <SiVercel />, color: "#fff" },
     { key: "postman", icon: <SiPostman />, color: "#FF6C37" },
     { key: "docker", icon: <SiDocker />, color: "#2496ED" },
   ];
