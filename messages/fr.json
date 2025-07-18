@@ -14,7 +14,7 @@
     "name": "Nom : Ryan PINA-SILASSE",
     "age": "Âge : 24",
     "location": "Localisation : Paris, France",
-    "description": "🎒 Depuis mon plus jeune âge, je baigne dans la technologie, une passion qui m'a naturellement conduit vers une carrière dans ce domaine.\n\n💻 Aujourd'hui développeur web de profession, mon parcours et ma curiosité m'ont permis de cultiver des compétences techniques, tout en nourrissant ma créativité. L'innovation est au cœur de mon quotidien.\n\n🎯 Actuellement je propose mes services en tant que freelance avec une envie claire : contribuer à des projets ambitieux, où mes compétences feront la différence, tout en continuant à apprendre et à innover ! Je suis prêt à transformer vos idées en solutions concrètes et impactantes !\n\n📍 Basé au Canada — Disponible immédiatement"
+    "description": "🎒 Depuis mon plus jeune âge, je baigne dans la technologie, une passion qui m'a naturellement conduit vers une carrière dans ce domaine.\n\n💻 Aujourd'hui développeur web de profession, mon parcours et ma curiosité m'ont permis de cultiver des compétences techniques, tout en nourrissant ma créativité. L'innovation est au cœur de mon quotidien.\n\n🎯 Actuellement je propose mes services en tant que freelance avec une envie claire : contribuer à des projets ambitieux, où mes compétences feront la différence, tout en continuant à apprendre et à innover ! Je suis prêt à transformer vos idées en solutions concrètes et impactantes !\n\n📍 Basé à Drummondville, Québec — Disponible immédiatement"
   },
   "cta": {
     "open_cv": "Ouvrir mon CV",
@@ -46,14 +46,14 @@
       },
       "database": {
         "postgresql": "PostgreSQL",
-        "supabase": "Supabase",
-        "firebase": "Firebase"
+        "supabase": "Supabase"
       },      
       "tools": {
         "git": "Git",
         "graphql": "GraphQL",
         "postman": "Postman",
-        "docker": "Docker"
+        "docker": "Docker",
+        "vercel": "Vercel"
       }
     }
   },
