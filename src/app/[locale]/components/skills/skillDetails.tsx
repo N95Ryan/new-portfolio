@@ -15,6 +15,8 @@ import {
   SiPostman,
   SiGraphql,
   SiVercel,
+  SiPython,
+  SiSwift,
 } from "react-icons/si";
 
 function SkillsDetails() {
@@ -22,6 +24,7 @@ function SkillsDetails() {
     { key: "javascript", icon: <SiJavascript />, color: "#F7DF1E" },
     { key: "typescript", icon: <SiTypescript />, color: "#007acc" },
     { key: "golang", icon: <SiGo />, color: "#00acd7" },
+    { key: "python", icon: <SiPython />, color: "#FFE873" },
   ];
 
   const frameworks = [
@@ -36,6 +39,7 @@ function SkillsDetails() {
   const mobile = [
     { key: "reactNative", icon: <SiReact />, color: "#61DAFB" },
     { key: "expo", icon: <SiExpo />, color: "#fff" },
+    { key: "swift", icon: <SiSwift />, color: "#F05138" },
   ];
 
   const database = [
