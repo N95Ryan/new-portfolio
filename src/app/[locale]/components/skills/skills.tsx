@@ -1,10 +1,12 @@
+"use client";
+
 import React from "react";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import SkillCard from "./SkillCard";
 import skillsDetails from "./skillDetails";
 
-export default async function Skills() {
-  const t = await getTranslations("skills");
+export default function Skills() {
+  const t = useTranslations("skills");
   const { languages, frameworks, mobile, tools, database } = skillsDetails();
 
   type Skill = {

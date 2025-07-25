@@ -28,7 +28,8 @@
       "languages": {
         "javascript": "JavaScript",
         "typescript": "TypeScript",
-        "golang": "Go"
+        "golang": "Go",
+        "python": "Python"
       },
       "frameworks": {
         "react": "React",
@@ -40,7 +41,8 @@
       },
       "mobile": {
         "reactNative": "React Native",
-        "expo":"Expo"
+        "expo":"Expo",
+        "swift": "Swift"
       },
       "database": {
         "postgresql": "PostgreSQL",

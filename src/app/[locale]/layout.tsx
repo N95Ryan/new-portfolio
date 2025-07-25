@@ -21,12 +21,12 @@ export async function generateMetadata({ params }: LayoutProps) {
         : "Ryan PINA-SILASSE • Web & Mobile Developer",
     description:
       locale === "fr"
-        ? "Développeur web et mobile passionné, spécialisé en développement d'applications modernes."
-        : "Passionate web and mobile developer, specialized in modern application development.",
+        ? "Développeur web et mobile, spécialisé en développement d'applications modernes."
+        : "Web and mobile developer, specialized in modern application development.",
     keywords:
       locale === "fr"
-        ? "Fullstack, Freelance, Remote, React, Next.js, TypeScript, Go, Golang, Supabase, Vercel, Astro, Gin, Développement d'applications mobiles, Création de site web sur mesure, scalable, PWA, MVP, site vitrine, développeur web, développeur mobile, JavaScript, portfolio, frontend, backend, Node.js, Express, Supabase, Vercel"
-        : "Fullstack, Freelance, Remote, React, Next.js, TypeScript, Go, Golang, Supabase, Vercel, Astro, Gin, Mobile application development, Custom web development, scalable, PWA, MVP, landing page, web developer, mobile developer, JavaScript, portfolio, frontend, backend, Node.js, Express, Supabase, Vercel",
+        ? "Fullstack, Freelance, Remote, React, Next.js, JavaScript, TypeScript, Go, Golang, Supabase, Vercel, Astro, Gin, Développement d'applications mobiles, Création de site web sur mesure, scalable, PWA, MVP, site vitrine, développeur web, développeur mobile, portfolio, frontend, backend, Node.js, Express, Canada, Remote Work, Python, Swift"
+        : "Fullstack, Freelance, Remote, React, Next.js, JavaScript, TypeScript, Go, Golang, Supabase, Vercel, Astro, Gin, Mobile application development, Custom web development, scalable, PWA, MVP, landing page, web developer, mobile developer, portfolio, frontend, backend, Node.js, Express, Canada, Remote Work, Python, Swift",
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "any" },
@@ -99,16 +99,14 @@ export default async function RootLayout({
         <meta name="theme-color" content="#000000" />
       </head>
       <body className="flex flex-col min-h-screen">
-        <header className="w-full py-2">
-          <div className="max-w-4xl mx-auto px-4 flex justify-center">
-            <LocaleSwitch />
-          </div>
-        </header>
-        <main className="flex-grow">
-          <NextIntlClientProvider messages={messages} locale={locale}>
-            {children}
-          </NextIntlClientProvider>
-        </main>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          <header className="w-full py-2">
+            <div className="max-w-4xl mx-auto px-4 flex justify-center">
+              <LocaleSwitch />
+            </div>
+          </header>
+          <main className="flex-grow">{children}</main>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
