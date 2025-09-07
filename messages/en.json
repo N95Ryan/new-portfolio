@@ -41,8 +41,7 @@
       },
       "mobile": {
         "reactNative": "React Native",
-        "expo":"Expo",
-        "swift": "Swift"
+        "expo":"Expo"
       },
       "database": {
         "postgresql": "PostgreSQL",
@@ -52,7 +51,8 @@
         "graphql": "GraphQL",
         "postman": "Postman",
         "docker": "Docker",
-        "vercel": "Vercel"
+        "vercel": "Vercel",
+        "vite": "Vite"
       }
     }
   },
@@ -61,44 +61,44 @@
     "button_label": "Link",
 "list": {
   "0": {
+    "name": "NEAT",
+    "description": "NEAT is a high-end hair salon in the heart of Paris that offers quality services.",
+    "technologies": "Astro • WordPress • Cloudinary",
+    "link": "Link"
+  },
+
+  "1": {
+    "name": "The 8bits Hangman",
+    "description": "The 8bits Hangman is a hangman game online. You have to find words in the video game domain.",
+    "technologies": "React • Vite • Go",
+    "link": "Link"
+  },
+
+  "2": {
     "name": "Spotr",
     "description": "Spotr is a mobile application designed for photographers in search of unique locations. It allows users to easily scout, save, and explore photo spots around the world.",
     "technologies": "Swift • GraphQL • Firebase",
     "link": "Link"
   },
 
-  "1": {
+  "3": {
     "name": "Lift Up",
     "description": "Lift Up is a mobile application aimed at bodybuilding and fitness enthusiasts. Its goal is to optimize workouts by enabling users to create personalized programs, instantly convert weights, and track their BMI.",
     "technologies": "React Native • Expo • Go",
     "link": "Link"
   },
 
-  "2": {
+  "4": {
     "name": "Bumble B",
     "description": "Developed as part of my final school project, Bumble B is a mobile application that controls a small car equipped with an ESP32 module provided by the school.",
-    "technologies": "React Native • Expo • Java",
-    "link": "Link"
-  },
-
-  "3": {
-    "name": "Konbini Website",
-    "description": "I was responsible for the homepage redesign. I also contributed to the integration of new features and to the optimization of the user experience.",
-    "technologies": "Next • GraphQL • WordPress",
-    "link": "Link"
-  },
-
-  "4": {
-    "name": "HairSwift",
-    "description": "A project built to explore the capabilities of Go. It enables efficient management of a hair salon, with features like appointment scheduling, staff management, and service tracking.",
-    "technologies": "Astro • Tailwind • Go",
+    "technologies": "React Native • Expo • C++",
     "link": "Link"
   },
 
   "5": {
-    "name": "Bitjutsu",
-    "description": "This project was created to practice token integration in a real-world application. It is an app that allows users to edit images via text prompts using the Replicate API.",
-    "technologies": "Next • Tailwind • Replicate",
+    "name": "Konbini",
+    "description": "I was responsible for the homepage redesign. I also contributed to the integration of new features and to the optimization of the user experience.",
+    "technologies": "Next.js • GraphQL • WordPress",
     "link": "Link"
   }
 }

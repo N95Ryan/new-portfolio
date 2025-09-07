@@ -2,7 +2,7 @@ import React from "react";
 
 interface SkillCardProps {
   title: string;
-  icon: string;
+  icon: React.ReactNode;
   color: string;
 }
 

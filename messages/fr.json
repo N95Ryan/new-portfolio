@@ -39,12 +39,12 @@
         "nextjs": "Next.js",
         "astro": "Astro",
         "nodedotjs": "Node.js",
-        "gin": "Gin"
+        "gin": "Gin",
+        "tailwind": "Tailwind CSS"
       },
       "mobile": {
         "reactNative": "React Native",
-        "expo": "Expo",
-        "swift": "Swift"
+        "expo": "Expo"
       },
       "database": {
         "postgresql": "PostgreSQL",
@@ -55,7 +55,8 @@
         "graphql": "GraphQL",
         "postman": "Postman",
         "docker": "Docker",
-        "vercel": "Vercel"
+        "vercel": "Vercel",
+        "vite": "Vite"
       }
     }
   },
@@ -64,40 +65,40 @@
     "button_label": "Lien",
     "list": {
       "0": {
+        "name": "NEAT",
+        "description": "NEAT est un salon de coiffure haut de gamme qui propose des services de qualité en plein coeur de Paris.",
+        "technologies": "Astro • WordPress • Cloudinary",
+        "link": "Lien"
+      },
+
+      "1": {
+        "name": "The 8bits Hangman",
+        "description": "The 8bits Hangman est un jeu de pendu en ligne. Il faut trouver des mots dans le domaine du jeu vidéo.",
+        "technologies": "React • Vite • Go",
+        "link": "Lien"
+      },
+      "2": {
         "name": "Spotr",
         "description": "Spotr est une application mobile conçue pour les photographes à la recherche de lieux uniques. Elle permet de repérer, sauvegarder et explorer facilement des spots photo partout dans le monde.",
         "technologies": "Swift • GraphQL • Firebase",
         "link": "Lien"
       },
-
-      "1": {
+      "3": {
         "name": "Lift Up",
         "description": "Lift Up est une application mobile destinée aux adeptes du bodybuilding et du fitness. Son objectif est d'optimiser vos séances en vous permettant de créer un programme personnalisé, de convertir instantanément les poids et de suivre votre IMC.",
         "technologies": "React Native • Expo • Go",
         "link": "Lien"
       },
-      "2": {
-        "name": "Bumble B",
-        "description": "Développée dans le cadre de mon projet de fin d'études, Bumble B est une application mobile permettant de contrôler une petite voiture équipée d'un module ESP32 fourni par l'école.",
-        "technologies": "React Native • Expo • Java",
-        "link": "Lien"
-      },
-      "3": {
-        "name": "Site web de Konbini",
-        "description": "J'ai été en charge de la refonte graphique de la page d'accueil du site. J'ai également participé à l'intégration de nouvelles fonctionnalités ainsi qu'à l'optimisation de l'UX.",
-        "technologies": "Next • GraphQL • WordPress",
-        "link": "Lien"
-      },
       "4": {
-        "name": "HairSwift",
-        "description": "Projet réalisé afin d'explorer les capacités de Go. Il permet de gérer efficacement un salon de coiffure, avec des fonctionnalités telles que : planification des rendez-vous, gestion des employés et suivi des services.",
-        "technologies": "Astro • Tailwind • Go",
+        "name": "Bumble B",
+        "description": "Developée dans le cadre de mon projet de fin d'études, Bumble B est une application mobile que je devais contrôler une petite voiture équipée d'un module ESP32 fourni par l'école.",
+        "technologies": "React Native • Expo • C++",
         "link": "Lien"
       },
       "5": {
-        "name": "Bitjutsu",
-        "description": "Ce projet a été établi dans le but de m'exercer à l'intégration de tokens dans un projet. Il s'agit d'une application qui permet d'éditer une image via des prompts de texte. Pour cela, j'ai utilisé l'API de Replicate.",
-        "technologies": "Next • Tailwind • Replicate",
+        "name": "Konbini",
+        "description": "J'ai été en charge de la refonte graphique de la page d'accueil du site. J'ai également participé à l'intégration de nouvelles fonctionnalités ainsi qu'à l'optimisation de l'UX.",
+        "technologies": "Next.js • GraphQL • WordPress",
         "link": "Lien"
       }
     }

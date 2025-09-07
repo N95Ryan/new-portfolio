@@ -16,7 +16,6 @@ import {
   SiGraphql,
   SiVercel,
   SiPython,
-  SiSwift,
 } from "react-icons/si";
 
 function SkillsDetails() {
@@ -32,14 +31,11 @@ function SkillsDetails() {
     { key: "nextjs", icon: <SiNextdotjs />, color: "#fff" },
     { key: "astro", icon: <SiAstro />, color: "#e93dc9" },
     { key: "nodedotjs", icon: <SiNodedotjs />, color: "#539e43" },
-    // { key: "gin", icon: <SiGin />, color: "#00acd7" },
-    // { key: "tailwind", icon: <SiTailwindcss />, color: "#06B6D4" },
   ];
 
   const mobile = [
     { key: "reactNative", icon: <SiReact />, color: "#61DAFB" },
     { key: "expo", icon: <SiExpo />, color: "#fff" },
-    { key: "swift", icon: <SiSwift />, color: "#F05138" },
   ];
 
   const database = [
