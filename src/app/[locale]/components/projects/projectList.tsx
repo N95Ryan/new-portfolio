@@ -3,7 +3,7 @@ import ProjectCard from "./projectCard";
 export const projects = [
   {
     title: "NEAT",
-    image: "/images/Projets/NEAT.jpg",
+    image: "/images/Projets/Neat.jpg",
     link: "https://neatparis.fr/",
     bgcolor: "#fff",
     textColor: "#000",
@@ -12,7 +12,7 @@ export const projects = [
 
   {
     title: "The 8bits Hangman",
-    image: "/images/Projets/the-8bits-hangman.jpg",
+    image: "/images/Projets/The-8bits-hangman.jpg",
     link: "https://the-8bits-hangman.vercel.app/",
     bgcolor: "#fff",
     textColor: "#000",
