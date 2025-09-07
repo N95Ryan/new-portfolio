@@ -2,12 +2,30 @@ import ProjectCard from "./projectCard";
 
 export const projects = [
   {
+    title: "NEAT",
+    image: "/images/Projets/NEAT.jpg",
+    link: "https://neatparis.fr/",
+    bgcolor: "#fff",
+    textColor: "#000",
+    id: "0",
+  },
+
+  {
+    title: "The 8bits Hangman",
+    image: "/images/Projets/the-8bits-hangman.jpg",
+    link: "https://the-8bits-hangman.vercel.app/",
+    bgcolor: "#fff",
+    textColor: "#000",
+    id: "1",
+  },
+
+  {
     title: "Spotr",
     image: "/images/Projets/Spotr.jpg",
     link: "https://apps.apple.com/fr/app/spotr-tous-les-spots-photo/id1151859681",
     bgcolor: "#fff",
     textColor: "#000",
-    id: "0",
+    id: "2",
   },
 
   {
@@ -16,7 +34,7 @@ export const projects = [
     link: "https://github.com/N95Ryan/Lift-Up",
     bgcolor: "#fff",
     textColor: "#000",
-    id: "1",
+    id: "3",
   },
 
   {
@@ -25,7 +43,7 @@ export const projects = [
     link: "https://github.com/N95Ryan/Bumble-B",
     bgcolor: "#322c2b",
     textColor: "#ffffff",
-    id: "2",
+    id: "4",
   },
   {
     title: "Konbini",
@@ -33,22 +51,6 @@ export const projects = [
     link: "https://www.konbini.com/",
     bgcolor: "#b91c1c",
     textColor: "#ffffff",
-    id: "3",
-  },
-  {
-    title: "HairSwift",
-    image: "/images/Projets/HairSwift.jpg",
-    link: "https://github.com/N95Ryan/HairSwift",
-    bgcolor: "#ffffff",
-    textColor: "#000000",
-    id: "4",
-  },
-  {
-    title: "Bitjutsu",
-    image: "/images/Projets/Bitjutsu.jpg",
-    link: "https://bijutsu-n95ryan.vercel.app/",
-    bgcolor: "#fff",
-    textColor: "#000000",
     id: "5",
   },
 ];
