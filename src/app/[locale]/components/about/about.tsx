@@ -17,7 +17,6 @@ export default function About() {
     setMounted(true);
   }, []);
 
-  // La route vers le CV est déterminée en fonction de la locale
   const cvPath = `/${locale === "fr" ? "CV_fr" : "CV_en"}.pdf`;
 
   return (
