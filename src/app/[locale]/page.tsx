@@ -4,10 +4,14 @@ import { Title } from "./components/title";
 import BackgroundAnimation from "./components/backgroundAnimation/backgroundAnimation";
 import Navbar from "./components/navbar";
 import About from "./components/about/about";
-import Skills from "./components/skills/skills";
+import SkillsServer from "./components/skills/SkillsServer";
 import Footer from "./components/footer";
 
-export default async function Homepage() {
+export default async function Homepage({
+  params,
+}: {
+  params: { locale: string };
+}) {
   let messages;
   try {
     messages = await getMessages();
@@ -21,7 +25,7 @@ export default async function Homepage() {
       <BackgroundAnimation />
       <Title />
       <About />
-      <Skills />
+      <SkillsServer locale={params.locale} />
       <Footer />
     </div>
   );

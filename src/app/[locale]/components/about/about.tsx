@@ -5,18 +5,13 @@ import AboutInfos from "./aboutInfos";
 import Link from "next/link";
 import SocialMedia from "../socialMedia";
 import CodeByNayruButton from "../CodeByNayruButton";
-import { useEffect, useState } from "react";
 
 export default function About() {
   const t = useTranslations("about");
   const tCta = useTranslations("cta");
   const locale = useLocale();
-  const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
+  // La route vers le CV est déterminée en fonction de la locale
   const cvPath = `/${locale === "fr" ? "CV_fr" : "CV_en"}.pdf`;
 
   return (

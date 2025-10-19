@@ -8,15 +8,13 @@
     "start": "next start",
     "lint": "next lint",
     "vercel-dev": "vercel dev",
-    "generate-icons": "node scripts/generate-icons.js",
-    "validate-translations": "node scripts/validate-translations.js",
-    "prebuild": "npm run validate-translations"
+    "generate-icons": "node scripts/generate-icons.js"
   },
   "dependencies": {
     "@next/third-parties": "^15.0.3",
     "classnames": "^2.5.1",
     "dotenv": "^16.4.5",
-    "next": "^15.5.6",
+    "next": "^14.2.26",
     "next-intl": "^3.26.5",
     "next-themes": "^0.3.0",
     "react": "18",

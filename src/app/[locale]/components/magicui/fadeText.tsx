@@ -53,7 +53,7 @@ export function FadeText({
       viewport={{ once: true }}
       variants={FADE_ANIMATION_VARIANTS}
     >
-      <motion.span className={className}>Ryan PINA-SILASSE</motion.span>
+      <motion.span className={className}>{text}</motion.span>
     </motion.div>
   );
 }
