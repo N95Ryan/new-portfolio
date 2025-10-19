@@ -26,7 +26,6 @@
     "database": "Database",  
     "list": {
       "languages": {
-        "javascript": "JavaScript",
         "typescript": "TypeScript",
         "golang": "Go",
         "python": "Python"
@@ -45,9 +44,10 @@
       },
       "database": {
         "postgresql": "PostgreSQL",
-        "supabase": "Supabase"},
+        "supabase": "Supabase",
+        "mongodb": "MongoDB"
+      },
       "tools": {
-        "git": "Git",
         "graphql": "GraphQL",
         "postman": "Postman",
         "docker": "Docker",

@@ -13,10 +13,7 @@ export function Title() {
         direction="down"
         text="Ryan PINA-SILASSE"
       />
-      <LetterPullUp
-        words={t("profession") || "Web & Mobile Developer"}
-        delay={0.1}
-      />
+      <LetterPullUp words={t("profession")} delay={0.1} />
     </div>
   );
 }

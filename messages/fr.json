@@ -23,7 +23,7 @@
   "skills": {
     "title": "Mes compétences",
     "languages": "Langages",
-    "frameworks": "Frameworks / Bibliothèques",
+    "frameworks": "Frameworks",
     "mobile": "Mobile",
     "database": "Base de données",  
     "tools": "Outils",
@@ -48,7 +48,8 @@
       },
       "database": {
         "postgresql": "PostgreSQL",
-        "supabase": "Supabase"
+        "supabase": "Supabase",
+        "mongodb": "MongoDB"
       },      
       "tools": {
         "git": "Git",
