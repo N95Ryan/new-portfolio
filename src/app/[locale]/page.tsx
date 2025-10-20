@@ -4,7 +4,7 @@ import { Title } from "./components/title";
 import BackgroundAnimation from "./components/backgroundAnimation/backgroundAnimation";
 import Navbar from "./components/navbar";
 import About from "./components/about/about";
-import SkillsServer from "./components/skills/SkillsServer";
+import Skills from "./components/skills/skills";
 import Footer from "./components/footer";
 
 export default async function Homepage({
@@ -25,7 +25,7 @@ export default async function Homepage({
       <BackgroundAnimation />
       <Title />
       <About />
-      <SkillsServer locale={params.locale} />
+      <Skills />
       <Footer />
     </div>
   );
