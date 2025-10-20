@@ -21,6 +21,7 @@ import {
 
 function SkillsDetails() {
   const languages = [
+    { key: "javascript", icon: <SiJavascript />, color: "#F7DF1E" },
     { key: "typescript", icon: <SiTypescript />, color: "#007acc" },
     { key: "golang", icon: <SiGo />, color: "#00acd7" },
     { key: "python", icon: <SiPython />, color: "#FFE873" },
@@ -47,6 +48,7 @@ function SkillsDetails() {
   ];
   const tools = [
     { key: "graphql", icon: <SiGraphql />, color: "#E10098" },
+    { key: "vercel", icon: <SiVercel />, color: "#fff" },
     { key: "postman", icon: <SiPostman />, color: "#FF6C37" },
     { key: "docker", icon: <SiDocker />, color: "#2496ED" },
   ];

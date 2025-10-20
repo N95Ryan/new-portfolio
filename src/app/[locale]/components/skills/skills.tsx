@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useTranslations } from "next-intl";
 import SkillCard from "./SkillCard";
 import skillsDetails from "./skillDetails";
@@ -8,11 +8,6 @@ import skillsDetails from "./skillDetails";
 export default function Skills() {
   const t = useTranslations("skills");
   const { languages, frameworks, mobile, tools, database } = skillsDetails();
-  const [isHydrated, setIsHydrated] = useState(false);
-
-  useEffect(() => {
-    setIsHydrated(true);
-  }, []);
 
   type Skill = {
     key: string;
@@ -21,32 +16,14 @@ export default function Skills() {
   };
 
   const renderSkillCards = (skills: Skill[], category: string) => {
-    return skills.map((skill: Skill) => {
-      const translationKey = `list.${category}.${skill.key}`;
-      const title = t(translationKey);
-
-      // Vérifier si la traduction est disponible
-      if (!isHydrated || title === translationKey) {
-        return (
-          <div
-            key={skill.key}
-            className="bg-gray-800 hover:bg-opacity-50 p-4 text-white rounded-xl flex flex-col items-center space-y-2 transition duration-300 w-full sm:w-64 h-48 animate-pulse"
-          >
-            <div className="h-6 bg-gray-600 rounded w-24"></div>
-            <div className="text-8xl text-gray-600">{skill.icon}</div>
-          </div>
-        );
-      }
-
-      return (
-        <SkillCard
-          key={skill.key}
-          title={title}
-          icon={skill.icon}
-          color={skill.color}
-        />
-      );
-    });
+    return skills.map((skill: Skill) => (
+      <SkillCard
+        key={skill.key}
+        title={t(`list.${category}.${skill.key}`)}
+        icon={skill.icon}
+        color={skill.color}
+      />
+    ));
   };
 
   return (

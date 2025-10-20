@@ -11,7 +11,7 @@
   "about": {
     "title": "Who Am I ?",
     "introduction": "Let me introduce myself :",
-"description": "🎒 I've been immersed in technology since I was a kid — a passion that naturally led me to pursue a career in this field.\n\n💻 Today, I'm a professional web developer. My journey, driven by curiosity, has allowed me to build solid technical skills while nurturing my creativity. Innovation is at the core of everything I do.\n\n🎯 I'm currently offering my services as a freelance developer, with a clear goal: to contribute to ambitious projects where my skills can truly make a difference — all while continuing to learn and innovate! I'm ready to turn your ideas into real, impactful solutions.\n\n📍 Based in Drummondville, Quebec — Available immediately"
+"description": "🎒 I've been immersed in technology since I was a kid, a passion that naturally led me to pursue a career in this field.\n\n💻 Today, I'm a professional fullstack web developer. My journey, driven by curiosity, has allowed me to build solid technical skills while nurturing my creativity. Innovation is at the core of everything I do.\n\n🎯 I'm currently offering my services as a freelance developer, with a clear goal: to contribute to ambitious projects where my skills can truly make a difference, all while continuing to learn and innovate! I'm ready to turn your ideas into real, impactful solutions.\n\n📍 Based in Drummondville, QC — Available immediately"
   },
   "cta": {
     "open_cv": "Open my resume",
@@ -26,6 +26,7 @@
     "database": "Database",  
     "list": {
       "languages": {
+        "javascript": "JavaScript",
         "typescript": "TypeScript",
         "golang": "Go",
         "python": "Python"
