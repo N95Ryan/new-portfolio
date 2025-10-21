@@ -32,13 +32,13 @@ export default function About() {
             href={cvPath}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-4 bg-indigo-600 text-white font-semibold text-lg rounded hover:bg-indigo-800 transition-colors"
+            className="w-full md:w-auto px-6 py-4 bg-indigo-600 text-white font-semibold text-lg rounded hover:bg-indigo-800 transition-colors text-center"
           >
             {tCta("open_cv")}
           </Link>
           <Link
             href="mailto:n95jsryan@gmail.com"
-            className="px-6 py-4 bg-indigo-600 text-white font-semibold text-lg rounded hover:bg-indigo-800 transition-colors"
+            className="w-full md:w-auto px-6 py-4 bg-indigo-600 text-white font-semibold text-lg rounded hover:bg-indigo-800 transition-colors text-center"
           >
             {tCta("mail_contact")}
           </Link>
