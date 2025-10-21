@@ -14,7 +14,7 @@ import {
   SiDocker,
   SiPostman,
   SiGraphql,
-  SiVercel,
+  SiVite,
   SiPython,
   SiMongodb,
 } from "react-icons/si";
@@ -47,8 +47,8 @@ function SkillsDetails() {
     { key: "supabase", icon: <SiSupabase />, color: "#3ECF8E" },
   ];
   const tools = [
+    { key: "vite", icon: <SiVite />, color: "#fff000" },
     { key: "graphql", icon: <SiGraphql />, color: "#E10098" },
-    { key: "vercel", icon: <SiVercel />, color: "#fff" },
     { key: "postman", icon: <SiPostman />, color: "#FF6C37" },
     { key: "docker", icon: <SiDocker />, color: "#2496ED" },
   ];
