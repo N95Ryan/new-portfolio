@@ -5,7 +5,7 @@ export async function POST(request: Request) {
     const { name, email, subject, message, locale } = await request.json();
     console.log('Données reçues:', { name, email, subject, message, locale });
 
-    // Vérification de l'URL du backend
+    // Backend URL verification
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
     console.log('URL du backend:', backendUrl);
     
@@ -14,7 +14,7 @@ export async function POST(request: Request) {
       throw new Error('Backend URL not configured');
     }
 
-    // Vérification de la disponibilité du backend
+    // Backend availability check
     try {
       const healthCheck = await fetch(`${backendUrl}/health`);
       console.log('État du backend:', healthCheck.status);
@@ -26,7 +26,7 @@ export async function POST(request: Request) {
       throw new Error('Backend non accessible');
     }
 
-    // Appel à l'API backend Go
+    // Call to the Go backend API
     const apiUrl = `${backendUrl}/api/send-email`;
     
     console.log('Tentative de connexion à:', apiUrl);

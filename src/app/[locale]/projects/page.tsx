@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import Navbar from "../components/navbar"; // Ajustez le chemin selon votre structure
+import Navbar from "../components/navbar";
 import BackgroundAnimation from "../components/backgroundAnimation/backgroundAnimation";
 import Footer from "../components/footer";
 import ProjectCard from "../components/projects/projectCard";
