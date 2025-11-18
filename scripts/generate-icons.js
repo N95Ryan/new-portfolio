@@ -12,13 +12,13 @@ async function generateIcons() {
   const inputFile = path.join(__dirname, '../public/favicon.ico');
   const outputDir = path.join(__dirname, '../public');
 
-  // Vérifier si le fichier source existe
+  // Check if source file exists
   if (!fs.existsSync(inputFile)) {
     console.error('Le fichier favicon.ico n\'existe pas dans le dossier public');
     process.exit(1);
   }
 
-  // Générer chaque taille d'icône
+  // Generate each icon size
   for (const [name, size] of Object.entries(sizes)) {
     try {
       await sharp(inputFile)
@@ -35,7 +35,7 @@ async function generateIcons() {
     }
   }
 
-  // Générer l'icône Safari (en PNG car Sharp ne supporte pas la conversion directe en SVG)
+  // Generate Safari icon (in PNG because Sharp doesn't support direct SVG conversion)
   try {
     await sharp(inputFile)
       .resize(512, 512, {

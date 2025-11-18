@@ -11,7 +11,7 @@ export default function About() {
   const tCta = useTranslations("cta");
   const locale = useLocale();
 
-  // La route vers le CV est déterminée en fonction de la locale
+  // The CV route is determined based on the locale
   const cvPath = `/${locale === "fr" ? "CV_fr" : "CV_en"}.pdf`;
 
   return (
